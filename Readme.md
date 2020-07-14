@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [mikhail sechin](https://up.htmlacademy.ru/adaptive/20/user/1391715).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
