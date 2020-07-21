@@ -17,6 +17,17 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="blank.html" class="main-nav__item-link">Поиск по сайту</a></li>
+        <li class="main-nav__item">
+          <a href="blank.html" class="main-nav__item-link">
+            Корзина: <span class="cart-content">пока пуста</span>
+          </a>
+        </li>
+      </ul>
+
     </nav>
   </header>
 
@@ -72,21 +83,23 @@
       <fieldset>
         <legend>Тел</legend>
         <label for="phone-number">
-          <input type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <input type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Поле для ввода номера телефона"
+            required>
         </label>
       </fieldset>
 
       <fieldset>
         <legend>e-mail</legend>
         <label for="e-mail">
-          <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" required>
+          <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*" aria-label="Поле для ввода адреса электронной почты" required>
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Доп</legend>
         <label for="comment">
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"
+            aria-label="Поле для ввода комментария к заказу"></textarea>
         </label>
       </fieldset>
 
