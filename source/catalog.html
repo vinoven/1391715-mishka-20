@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head class="page">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров - Интернет-магазин товаров ручной работы "Мишка"</title>
+</head>
+
+<body class="page__body">
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html" aria-label="На главную">
+      <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="blank.html" class="main-nav__item-link">Поиск по сайту</a></li>
+        <li class="main-nav__item">
+          <a href="blank.html" class="main-nav__item-link">
+            Корзина: <span class="js-cart-content">пока пуста</span>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
+    <section class="catalog">
+      <h2 class="visually-hidden">Все товары</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+              alt="Изображение вязаного игрушечного зайца">
+          </a>
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <dl class="catalog__item-description">
+              <dt class="catalog__item-name">Зайчик-попрыгайчик</dt>
+              <dd class="catalog__item-text">Рост 30 см, вес 200 г</dd>
+            </dl>
+          </a>
+          <span class="catalog__item-price">1 200 руб.</span>
+          <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+        <li class="catalog__item">
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+              alt="Изображение вязаной корзинки для белья в белом и коралловом цветах">
+          </a>
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <dl class="catalog__item-description">
+              <dt class="catalog__item-name">Корзинка для белья</dt>
+              <dd class="catalog__item-text">Диаметр 15 см, высота 10 см</dd>
+            </dl>
+          </a>
+          <span class="catalog__item-price">690 руб.</span>
+          <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+        <li class="catalog__item">
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+              alt="Изображение вязаной корзинки для игрушек в белом и салатовом цветах">
+          </a>
+          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <dl class="catalog__item-description">
+              <dt class="catalog__item-name">Большая корзинка для игрушек</dt>
+              <dd class="catalog__item-text">Диаметр 30 см, высота 30 см</dd>
+            </dl>
+          </a>
+          <span class="catalog__item-price">1 500 руб.</span>
+          <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
+        </li>
+      </ul>
+    </section>
+    <section class="promo">
+      <h2 class="promo__title">Процесс производства</h2>
+      <video class="promo__video" width="260" height="150" poster="https://via.placeholder.com/260x150">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <button type="button"><span class="visually-hidden">Смотреть видео</span></button>
+      <p class="promo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="promo__buy button" href="blank.html">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Дополнительная информация об интернет-магазине и сайте</h2>
+    <section class="socials">
+      <h3 class="visually-hidden">Наши социальные сети</h3>
+      <ul class="socials__list">
+        <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте"></a></li>
+        <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук"></a></li>
+        <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм"></a></li>
+      </ul>
+    </section>
+    <section class="made-by">
+      <h3 class="visually-hidden">Сайт разработан:</h3>
+      <span class="made-by__text">Разработано</span>
+      <a class="made-by__developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">
+        <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="Логотип разработчика сайта - HTML Academy">
+      </a>
+    </section>
+  </footer>
+
+  <div class="add-to-cart modal">
+    <h2 class="add-to-cart__title">Добавить в корзину</h2>
+    <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset>
+        <legend>Выберите размер:</legend>
+        <label for="size-s">S<input type="radio" name="size" id="size-s" value="s" required></label>
+        <label for="size-m">M<input type="radio" name="size" id="size-m" value="m" required></label>
+        <label for="size-l">L<input type="radio" name="size" id="size-l" value="l" required></label>
+      </fieldset>
+      <button type="submit">Добавить</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
