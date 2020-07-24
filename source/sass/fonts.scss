@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("OpenSansRegular"), local("OpenSans-Regular"),
-    url("../fonts/open-sans-v17-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/open-sans-v17-latin_cyrillic-regular.woff") format("woff");
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -12,6 +12,6 @@
   font-style: normal;
   font-weight: 700;
   src: local("OpenSansBold"), local("OpenSans-Bold"),
-    url("../fonts/open-sans-v17-latin_cyrillic-700.woff2") format("woff2"),
-    url("../fonts/open-sans-v17-latin_cyrillic-700.woff") format("woff");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
