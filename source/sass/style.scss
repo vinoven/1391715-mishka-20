@@ -1,4 +1,10 @@
 @import '../sass/fonts';
 @import '../sass/variables';
+
 @import '../sass/global';
 @import '../sass/common';
+
+@import '../sass/blocks/main-nav';
+@import '../sass/blocks/page-main.scss';
+@import '../sass/blocks/catalog-nav.scss';
+@import '../sass/blocks/popular.scss';
