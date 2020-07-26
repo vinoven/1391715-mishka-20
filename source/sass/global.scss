@@ -1,17 +1,18 @@
 ﻿body {
   min-width: 320px;
   margin: 0;
-  padding: 0;
-  color: $basic-black;
-  background-color: $basic-white;
-  font-family: "OpenSans", "Trebuchet MS", sans-serif;
+
   font-size: 17px;
   line-height: 20px;
+  font-family: "OpenSans", "Trebuchet MS", sans-serif;
+  color: $basic-black;
+
+  background-color: $basic-white;
 }
 
 a {
-  text-decoration: none;
   color: $basic-black;
+  text-decoration: none;
 }
 
 img {

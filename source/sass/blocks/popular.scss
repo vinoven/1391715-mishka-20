@@ -1,13 +1,13 @@
 ﻿.popular__item-title {
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .popular__item-tag {
   font-weight: bold;
-  text-transform: uppercase;
   color: $accent-light-mint;
+  text-transform: uppercase;
 }
 
 .popular__item-decription {
