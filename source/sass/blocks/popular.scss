@@ -20,3 +20,15 @@
   font-size: 15px;
   color: $basic-dark-gray;
 }
+
+.popular__item-price {
+  font-weight: bold;
+  line-height: 24px;
+  color: $basic-dark-gray;
+}
+
+.popular__item-buy {
+  font-weight: bold;
+  color: $basic-dark-gray;
+  text-transform: uppercase;
+}
