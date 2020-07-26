@@ -21,3 +21,11 @@
 
   list-style: none;
 }
+
+.button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-dark-gray;
+  text-transform: uppercase;
+}
