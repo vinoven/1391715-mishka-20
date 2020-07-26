@@ -1,4 +1,4 @@
-﻿.order__options {
+﻿.order__fieldset {
   margin: 0;
   padding: 0;
 
@@ -6,7 +6,7 @@
   border-top: 1px solid $accent-light-mint;
 }
 
-.order__option-group-name {
+.order__fieldset-name {
   margin: 0;
   padding-right: 25px;
 
@@ -16,12 +16,12 @@
   text-transform: uppercase;
 }
 
-.order__option-name {
+.order__field-name {
   font-weight: bold;
   line-height: 18px;
 }
 
-.order__option-user-input {
+.order__field-user-input {
   font-size: 17px;
   line-height: 18px;
   font-family: "OpenSans", "Trebuchet MS", sans-serif;
@@ -34,7 +34,7 @@
   }
 }
 
-.order__option-user-input::placeholder {
+.order__field-user-input::placeholder {
   color: $basic-black;
 
   opacity: 0.3;
