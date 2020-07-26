@@ -1,0 +1,47 @@
+﻿.order__options {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-top: 1px solid $accent-light-mint;
+}
+
+.order__option-group-name {
+  margin: 0;
+  padding-right: 25px;
+
+  font-weight: bold;
+  line-height: 16px;
+  color: $accent-light-mint;
+  text-transform: uppercase;
+}
+
+.order__option-name {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.order__option-user-input {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "OpenSans", "Trebuchet MS", sans-serif;
+
+  border: 0;
+  border-bottom: 2px solid $basic-black;
+
+  &--textarea {
+    border: 2px solid $basic-black;
+  }
+}
+
+.order__option-user-input::placeholder {
+  color: $basic-black;
+
+  opacity: 0.3;
+}
+
+.order__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-dark-gray;
+}
