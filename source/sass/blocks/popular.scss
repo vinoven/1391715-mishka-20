@@ -16,9 +16,15 @@
   color: $basic-dark-gray;
 }
 
-.popular__item-features {
+.popular__item-properties {
+  margin: 0;
+
   font-size: 15px;
   color: $basic-dark-gray;
+}
+
+.popular__item-property-value {
+  margin: 0;
 }
 
 .popular__item-price {
