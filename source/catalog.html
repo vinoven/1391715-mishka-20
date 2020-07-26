@@ -117,13 +117,13 @@
   <div class="add-to-cart modal">
     <h2 class="add-to-cart__title">Добавить в корзину</h2>
     <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset>
-        <legend>Выберите размер:</legend>
-        <label for="size-s">S<input type="radio" name="size" id="size-s" value="s" checked></label>
-        <label for="size-m">M<input type="radio" name="size" id="size-m" value="m"></label>
-        <label for="size-l">L<input type="radio" name="size" id="size-l" value="l"></label>
+      <fieldset class="add-to-cart__options">
+        <legend class="add-to-cart__options-header">Выберите размер:</legend>
+        <label class="add-to-cart__option-name" for="size-s">S<input type="radio" name="size" id="size-s" value="s" checked></label>
+        <label class="add-to-cart__option-name" for="size-m">M<input type="radio" name="size" id="size-m" value="m"></label>
+        <label class="add-to-cart__option-name" for="size-l">L<input type="radio" name="size" id="size-l" value="l"></label>
       </fieldset>
-      <button type="submit">Добавить</button>
+      <button class="add-to-cart__option-submit button" type="submit">Добавить</button>
     </form>
   </div>
 
