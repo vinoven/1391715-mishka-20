@@ -1,0 +1,26 @@
+body {
+  min-width: 320px;
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "OpenSans", "Trebuchet MS", sans-serif;
+  color: $basic-black;
+
+  background-color: $basic-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

@@ -1,0 +1,30 @@
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__type {
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+}
+
+.contacts__definition a[href] {
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+}
+
+.contacts__definition {
+  margin: 0;
+}
+
+.contacts__definition address {
+  margin: 0;
+
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+}

@@ -1,0 +1,19 @@
+.catalog__item-name {
+  font-weight: bold;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.catalog__item-text {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+}
+
+.catalog__item-price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+}

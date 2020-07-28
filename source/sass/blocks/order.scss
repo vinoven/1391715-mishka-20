@@ -1,0 +1,43 @@
+.order__fieldset {
+  border-top: 1px solid $accent-light-mint;
+}
+
+.order__fieldset-name {
+  margin: 0;
+  padding-right: 25px;
+
+  font-weight: bold;
+  line-height: 16px;
+  color: $accent-light-mint;
+  text-transform: uppercase;
+}
+
+.order__field-name {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.order__field-user-input {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: inherit;
+
+  border: 0;
+  border-bottom: 2px solid $basic-black;
+
+  &--textarea {
+    border: 2px solid $basic-black;
+  }
+}
+
+.order__field-user-input::placeholder {
+  color: $basic-black;
+
+  opacity: 0.3;
+}
+
+.order__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-dark-gray;
+}

@@ -1,0 +1,34 @@
+.popular__item-title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.popular__item-tag {
+  font-weight: bold;
+  color: $accent-light-mint;
+  text-transform: uppercase;
+}
+
+.popular__item-decription {
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-dark-gray;
+}
+
+.popular__item-properties {
+  margin: 0;
+
+  font-size: 15px;
+  color: $basic-dark-gray;
+}
+
+.popular__item-property-value {
+  margin: 0;
+}
+
+.popular__item-price {
+  font-weight: bold;
+  line-height: 24px;
+  color: $basic-dark-gray;
+}

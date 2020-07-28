@@ -1,0 +1,18 @@
+.catalog-nav__item {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $basic-white;
+
+  &--interior {
+    background-color: $accent-light-mint;
+  }
+
+  &--toys {
+    background-color: $accent-dark-mint;
+  }
+}
+
+.catalog-nav__item a {
+  color: inherit;
+}
