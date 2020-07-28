@@ -23,9 +23,21 @@
 }
 
 .button {
+  padding: 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $basic-dark-gray;
   text-transform: uppercase;
+
+  background-color: $basic-white;
+  border: 2px solid $basic-dark-gray;
+}
+
+.form-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
 }

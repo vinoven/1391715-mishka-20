@@ -1,8 +1,4 @@
 .order__fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: 0;
   border-top: 1px solid $accent-light-mint;
 }
 
@@ -24,7 +20,7 @@
 .order__field-user-input {
   font-size: 17px;
   line-height: 18px;
-  font-family: "OpenSans", "Trebuchet MS", sans-serif;
+  font-family: inherit;
 
   border: 0;
   border-bottom: 2px solid $basic-black;

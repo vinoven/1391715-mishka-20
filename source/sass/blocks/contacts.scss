@@ -18,13 +18,13 @@
 
 .contacts__definition {
   margin: 0;
+}
 
-  & address {
-    margin: 0;
+.contacts__definition address {
+  margin: 0;
 
-    font-style: normal;
-    font-size: 15px;
-    line-height: 30px;
-    color: $basic-dark-gray;
-  }
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
 }
