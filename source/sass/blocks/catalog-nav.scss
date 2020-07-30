@@ -1,8 +1,28 @@
+.catalog-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .catalog-nav__item {
+  display: block;
+  flex-grow: 1;
+
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &--interior {
     background-color: $accent-light-mint;
@@ -14,5 +34,8 @@
 }
 
 .catalog-nav__item a {
+  display: block;
+  padding: 25px 60px 30px 30px;
+
   color: inherit;
 }

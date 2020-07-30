@@ -1,7 +1,21 @@
 .page-main__title {
+  height: 280px;
+  margin: 0;
+
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
 
   background-color: $bg-light-gray;
+
+  @media (min-width: $tablet-width) {
+    height: 625px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
