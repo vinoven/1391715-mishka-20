@@ -7,19 +7,19 @@
     display: grid;
 
     grid-template-areas: "title title title tag"
-    "decription decription picture picture"
-    "properties properties picture picture"
-    "price price picture picture"
-    "buy buy picture picture";
+      "decription decription picture picture"
+      "properties properties picture picture"
+      "price price picture picture"
+      "buy buy picture picture";
     grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "tag title title picture picture picture"
-    ". decription decription picture picture picture"
-    ". properties properties picture picture picture"
-    ". price price picture picture picture"
-    ". buy buy picture picture picture";
+      ". decription decription picture picture picture"
+      ". properties properties picture picture picture"
+      ". price price picture picture picture"
+      ". buy buy picture picture picture";
     grid-template-columns: repeat(6, 1fr);
   }
 }

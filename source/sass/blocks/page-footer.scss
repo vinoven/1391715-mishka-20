@@ -1,5 +1,6 @@
 .page-footer {
   display: flex;
+
   @media (max-width: $mobile-only-width) {
     flex-direction: column;
   }
