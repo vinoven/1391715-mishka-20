@@ -1,9 +1,13 @@
-.features__title {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-}
-
 .features__item {
   font-weight: bold;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    columns: 2;
+  }
 }

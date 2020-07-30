@@ -1,0 +1,12 @@
+.page-footer {
+  display: flex;
+  @media (max-width: $mobile-only-width) {
+    flex-direction: column;
+  }
+}
+
+.page-footer__logo {
+  @media (max-width: $mobile-only-width) {
+    display: none;
+  }
+}

@@ -12,7 +12,7 @@
 
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo logo">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
       </a>
       <nav class="main-nav">
@@ -44,7 +44,7 @@
       <section class="popular">
         <h2 class="visually-hidden">Товары недели и популярные товары</h2>
         <div class="popular__item">
-          <h3 class="popular__item-title">Вязаные корзинки</h3>
+          <h3 class="popular__item-title title">Вязаные корзинки</h3>
           <span class="popular__item-tag">Товар недели</span>
           <p class="popular__item-decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <dl class="popular__item-properties">
@@ -61,7 +61,7 @@
         </div>
       </section>
       <section class="features">
-        <h2 class="features__title">Коротко о нас:</h2>
+        <h2 class="features__title title">Коротко о нас:</h2>
         <ul class="features__list list">
           <li class="features__item features__item--ecology">Экологически чистые материалы</li>
           <li class="features__item features__item--style">Скандинавский стиль по российской цене</li>
@@ -72,7 +72,7 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list list">
           <li class="reviews__item">
             <blockquote class="review">
@@ -92,17 +92,18 @@
 
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl>
-          <dt class="contacts__type">e-mail:</dt>
-          <dd class="contacts__definition">
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dd>
-          <dt class="contacts__type">адрес:</dt>
-          <dd class="contacts__definition">
-            <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
-          </dd>
-        </dl>
+        <h2 class="contacts__title title">Контакты</h2>
+
+        <div class="contacts__container">
+          <div class="contacts__inner-container">
+            <span class="contacts__type plain-text">e-mail:</span>
+            <a class="plain-text" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__inner-container"><span class="contacts__type plain-text">адрес:</span>
+            <address class="plain-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+          </div>
+        </div>
+
         <a class="contacts__map" href="https://yandex.ru/maps/" aria-label="Посмотреть местоположене магазина на сайте Яндекс.Карты"></a>
         <a class="contacts__write button" href="blank.html">Напишите нам</a>
       </section>
@@ -110,12 +111,15 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Дополнительная информация об интернет-магазине и сайте</h2>
+      <a class="page-footer__logo logo">
+        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
+      </a>
       <section class="socials">
         <h3 class="visually-hidden">Наши социальные сети</h3>
-        <ul class="socials__list">
-          <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте"></a></li>
-          <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук"></a></li>
-          <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм"></a></li>
+        <ul class="socials__list list">
+          <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте">ins</a></li>
+          <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук">fb</a></li>
+          <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм">tw</a></li>
         </ul>
       </section>
       <section class="made-by">
