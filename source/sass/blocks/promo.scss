@@ -1,10 +1,39 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .promo__title {
   font-weight: bold;
   line-height: 24px;
+
+  @media (max-width: $mobile-only-width) {
+    order: -1;
+  }
 }
 
 .promo__text {
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark-gray;
+}
+
+.promo__media video {
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+  }
 }
