@@ -1,11 +1,45 @@
+.order {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .order__desc {
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark-gray;
+  grid-column: 1 / -1;
 }
 
 .order__fieldset {
   border-top: 1px solid $accent-light-mint;
+  display: grid;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    grid-template-columns: 167px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+    grid-template-columns: 175px 1fr;
+  }
+}
+.order__fieldset-list {
+  display: grid;
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 .order__fieldset-name {
@@ -16,6 +50,7 @@
   line-height: 16px;
   color: $accent-light-mint;
   text-transform: uppercase;
+  float: left;
 }
 
 .order__field-name {
@@ -46,4 +81,8 @@
   font-size: 14px;
   line-height: 16px;
   color: $basic-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

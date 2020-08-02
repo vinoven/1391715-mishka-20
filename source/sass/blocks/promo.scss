@@ -21,6 +21,11 @@
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .promo__media video {
