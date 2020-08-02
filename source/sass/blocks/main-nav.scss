@@ -1,3 +1,21 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .main-nav__item-link {
   display: block;
   padding: 27px 0;

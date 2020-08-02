@@ -12,7 +12,7 @@
 
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" aria-label="На главную">
+      <a class="page-header__logo logo" href="index.html" aria-label="На главную">
         <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
       </a>
       <nav class="main-nav">
@@ -32,7 +32,7 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <h1 class="page-main__title title">Каталог товаров</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Все товары</h2>
         <ul class="catalog__list list">
@@ -47,8 +47,8 @@
                 <p class="catalog__item-name">Зайчик-попрыгайчик</p>
               </a>
               <p class="catalog__item-text">Рост 30 см, вес 200 г</p>
+              <span class="catalog__item-price">1 200 руб.</span>
             </div>
-            <span class="catalog__item-price">1 200 руб.</span>
             <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
           </li>
           <li class="catalog__item">
@@ -62,8 +62,8 @@
                 <p class="catalog__item-name">Корзинка для белья</p>
               </a>
               <p class="catalog__item-text">Диаметр 15 см, высота 10 см</p>
+              <span class="catalog__item-price">690 руб.</span>
             </div>
-            <span class="catalog__item-price">690 руб.</span>
             <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
           </li>
           <li class="catalog__item">
@@ -77,31 +77,38 @@
                 <p class="catalog__item-name">Большая корзинка для игрушек</p>
               </a>
               <p class="catalog__item-text">Диаметр 30 см, высота 30 см</p>
+              <span class="catalog__item-price">1 500 руб.</span>
             </div>
-            <span class="catalog__item-price">1 500 руб.</span>
             <a class="catalog__item-to-cart" href="blank.html"><span class="visually-hidden">Добавить в корзину</span></a>
           </li>
         </ul>
       </section>
       <section class="promo">
-        <h2 class="promo__title">Процесс производства</h2>
-        <video class="promo__video" width="260" height="150" poster="https://via.placeholder.com/260x150">
-          <source src="video.mp4" type="video/mp4">
-        </video>
-        <button type="button"><span class="visually-hidden">Смотреть видео</span></button>
-        <p class="promo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="promo__buy button" href="blank.html">Сделать заказ</a>
+        <div class="promo__media">
+          <video class="promo__video" width="260" height="150" poster="https://via.placeholder.com/682x455">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <button type="button"><span class="visually-hidden">Смотреть видео</span></button>
+        </div>
+        <div class="promo__info">
+          <h2 class="promo__title">Процесс производства</h2>
+          <p class="promo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="promo__buy button" href="blank.html">Сделать заказ</a>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Дополнительная информация об интернет-магазине и сайте</h2>
+      <a class="page-footer__logo logo" href="index.html">
+        <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
+      </a>
       <section class="socials">
         <h3 class="visually-hidden">Наши социальные сети</h3>
-        <ul class="socials__list">
-          <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте"></a></li>
-          <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук"></a></li>
-          <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм"></a></li>
+        <ul class="socials__list list">
+          <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте">ins</a></li>
+          <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук">fb</a></li>
+          <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм">tw</a></li>
         </ul>
       </section>
       <section class="made-by">
@@ -118,7 +125,7 @@
     <h2 class="add-to-cart__title">Добавить в корзину</h2>
     <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="add-to-cart__options form-fieldset">
-        <legend class="add-to-cart__options-header">Выберите размер:</legend>
+        <legend class="add-to-cart__options-header plain-text">Выберите размер:</legend>
         <label class="add-to-cart__option-name" for="size-s">S<input type="radio" name="size" id="size-s" value="s" checked></label>
         <label class="add-to-cart__option-name" for="size-m">M<input type="radio" name="size" id="size-m" value="m"></label>
         <label class="add-to-cart__option-name" for="size-l">L<input type="radio" name="size" id="size-l" value="l"></label>

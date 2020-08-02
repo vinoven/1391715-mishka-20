@@ -1,13 +1,22 @@
 .page-main__title {
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
+  height: 177px;
+  margin: 0;
 
   background-color: $bg-light-gray;
-}
 
-.page-main__text {
-  font-size: 13px;
-  line-height: 24px;
-  color: $basic-dark-gray;
+  @media (min-width: $tablet-width) {
+    height: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 270px;
+  }
+
+  &--hero {
+    height: 280px;
+
+    @media (min-width: $tablet-width) {
+      height: 625px;
+    }
+  }
 }

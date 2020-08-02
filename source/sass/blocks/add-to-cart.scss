@@ -3,12 +3,11 @@
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
-}
 
-.add-to-cart__options-header {
-  font-size: 15px;
-  line-height: 30px;
-  color: $basic-dark-gray;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .add-to-cart__option-name {

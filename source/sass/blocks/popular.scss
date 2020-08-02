@@ -1,19 +1,52 @@
+.popular {
+  padding: 25px 0 35px 0;
+}
+
+.popular__item {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-areas: "title title title tag"
+      "decription decription picture picture"
+      "properties properties picture picture"
+      "price price picture picture"
+      "buy buy picture picture";
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "tag title title picture picture picture"
+      ". decription decription picture picture picture"
+      ". properties properties picture picture picture"
+      ". price price picture picture picture"
+      ". buy buy picture picture picture";
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 .popular__item-title {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  grid-area: title;
 }
 
 .popular__item-tag {
   font-weight: bold;
   color: $accent-light-mint;
   text-transform: uppercase;
+
+  grid-area: tag;
 }
 
 .popular__item-decription {
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark-gray;
+
+  grid-area: decription;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .popular__item-properties {
@@ -21,14 +54,43 @@
 
   font-size: 15px;
   color: $basic-dark-gray;
+
+  grid-area: properties;
 }
 
 .popular__item-property-value {
   margin: 0;
 }
 
+.popular__item-picture {
+  width: 260px;
+  height: 315px;
+
+  grid-area: picture;
+
+  @media (min-width: $tablet-width) {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
 .popular__item-price {
   font-weight: bold;
   line-height: 24px;
   color: $basic-dark-gray;
+
+  grid-area: price;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.popular__item-buy {
+  grid-area: buy;
 }

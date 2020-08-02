@@ -13,6 +13,16 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 50px;
+  }
 }
 
 .list {
@@ -40,4 +50,34 @@
   padding: 0;
 
   border: 0;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.plain-text {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
