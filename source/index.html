@@ -36,26 +36,37 @@
     <section class="catalog-nav">
       <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
       <ul class="catalog-nav__list list">
-        <li class="catalog-nav__item catalog-nav__item--interior"><a href="catalog.html" aria-label="Ссылка на раздел каталога товаров">Предметы
-            интерьера</a></li>
+        <li class="catalog-nav__item catalog-nav__item--interior">
+          <a href="catalog.html" aria-label="Ссылка на раздел каталога товаров">Предметы
+            интерьера</a>
+        </li>
         <li class="catalog-nav__item catalog-nav__item--toys"><a href="catalog.html" aria-label="Ссылка на раздел каталога товаров">Детские
             игрушки</a></li>
       </ul>
     </section>
-    <section class="popular">
+    <section class="popular container">
       <h2 class="visually-hidden">Товары недели и популярные товары</h2>
       <div class="popular__item">
         <h3 class="popular__item-title title">Вязаные корзинки</h3>
         <span class="popular__item-tag">Товар недели</span>
         <p class="popular__item-decription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="popular__item-properties">
-          <dt class="popular__item-property">Цвет:</dt>
-          <dd class="popular__item-property-value">«Тиффани»/серый</dd>
-          <dt class="popular__item-property">Диаметр:</dt>
-          <dd class="popular__item-property-value">25 см</dd>
-          <dt class="popular__item-property">Высота:</dt>
-          <dd class="popular__item-property-value">15 см</dd>
-        </dl>
+
+        <table class="popular__item-properties">
+          <tr>
+            <td class="popular__item-property">Цвет:</td>
+            <td class="popular__item-property-value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="popular__item-property">Диаметр:</td>
+            <td class="popular__item-property-value">25 см</td>
+          </tr>
+          <tr>
+            <td class="popular__item-property">Высота:</td>
+            <td class="popular__item-property-value">15 см</td>
+          </tr>
+        </table>
+
+
         <img class="popular__item-picture" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзирки">
         <span class="popular__item-price">Цена: 990 руб.</span>
         <a class="popular__item-buy button" href="blank.html">Заказать</a>

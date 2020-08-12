@@ -1,5 +1,5 @@
 .popular {
-  padding: 25px 0 35px 0;
+  padding: 30px 0 35px 0;
 }
 
 .popular__item {
@@ -7,19 +7,19 @@
     display: grid;
 
     grid-template-areas: "title title title tag"
-      "decription decription picture picture"
-      "properties properties picture picture"
-      "price price picture picture"
-      "buy buy picture picture";
+    "decription decription picture picture"
+    "properties properties picture picture"
+    "price price picture picture"
+    "buy buy picture picture";
     grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "tag title title picture picture picture"
-      ". decription decription picture picture picture"
-      ". properties properties picture picture picture"
-      ". price price picture picture picture"
-      ". buy buy picture picture picture";
+    ". decription decription picture picture picture"
+    ". properties properties picture picture picture"
+    ". price price picture picture picture"
+    ". buy buy picture picture picture";
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -37,6 +37,9 @@
 }
 
 .popular__item-decription {
+  margin-top: 18px;
+  margin-bottom: 28px;
+
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark-gray;
@@ -44,8 +47,16 @@
   grid-area: decription;
 
   @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    margin-bottom: 48px;
+
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop -width) {
+    margin-top: 38px;
+    margin-bottom: 60px;
   }
 }
 
