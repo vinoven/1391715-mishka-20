@@ -55,6 +55,15 @@
       <path fill="currentColor"
         d="M242.56,272.243h12.504v-13.91H242.56V272.243z M270.742,248.623h-7.335 c0.521-0.267,0.984-0.549,1.396-0.845c1.588-1.133,2.424-2.57,2.42-3.999c0.002-1.169-0.556-2.202-1.359-2.901 c-0.805-0.704-1.869-1.119-3.016-1.121c-1.22-0.001-2.352,0.421-3.32,1.069c-1.459,0.979-2.606,2.451-3.424,4.067 c-0.039,0.079-0.078,0.157-0.115,0.236c-0.299-0.623-0.647-1.226-1.041-1.792c-0.691-0.985-1.523-1.86-2.497-2.511 c-0.97-0.646-2.103-1.069-3.322-1.069c-1.213,0.004-2.323,0.514-3.155,1.295c-0.828,0.783-1.41,1.885-1.412,3.135 c-0.002,0.73,0.211,1.494,0.649,2.188c0.552,0.872,1.424,1.628,2.633,2.248h-6.588c-0.878,0-1.591,0.712-1.591,1.59v5.897h15.396 v-7.488h1.873v7.488h15.396v-5.897C272.333,249.334,271.621,248.623,270.742,248.623 M248.38,246.284 c-0.622-0.391-1-0.785-1.22-1.135c-0.22-0.354-0.294-0.662-0.296-0.963c-0.004-0.504,0.248-1.042,0.691-1.461 c0.437-0.415,1.028-0.667,1.562-0.667h0.013c0.685,0,1.366,0.231,2.046,0.683c1.018,0.671,1.975,1.85,2.645,3.187 c0.342,0.676,0.609,1.39,0.789,2.087C251.528,247.694,249.532,247.013,248.38,246.284 M258.917,244.657 c0.557-0.797,1.21-1.466,1.887-1.916c0.68-0.451,1.362-0.683,2.047-0.683h0.006c0.574,0,1.117,0.22,1.494,0.55 c0.377,0.336,0.571,0.739,0.573,1.171c-0.004,0.512-0.272,1.259-1.467,2.132c-1.138,0.825-3.101,1.673-6.127,2.265 C257.62,246.974,258.177,245.704,258.917,244.657 M256.937,272.243h12.506v-13.91h-12.506V272.243z" />
     </symbol>
+    <symbol id="arrowLeft" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003">
+      <polygon fill="currentColor"
+        points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+    </symbol>
+    <symbol id="arrowRight" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003">
+      <polygon fill="currentColor"
+        points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
+    </symbol>
+
   </svg>
 
 
@@ -154,25 +163,34 @@
           Поставляется в<br> подарочной упаковке</li>
       </ul>
     </section>
-    <section class="reviews">
-      <h2 class="reviews__title title">Отзывы</h2>
-      <ul class="reviews__list list">
-        <li class="reviews__item">
-          <blockquote class="review">
-            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!</p>
-            <cite class="review__author">Анастасия Красильникова</cite>
-            <span class="review__username">@misssssiskras</span>
-          </blockquote>
-        </li>
-      </ul>
-      <div class="controls">
-        <button class="controls__prev-btn reviews__prev-review" type="button" aria-label="Предыдущий отзыв">&#10229;</button>
-        <button class="controls__next-btn reviews__next-review" type="button" aria-label="Следующий отзыв">&#10230;</button>
+    <section class="reviews ">
+      <div class="reviews__wrapper container">
+        <h2 class="reviews__title title">Отзывы</h2>
+        <ul class="reviews__list list">
+          <li class="reviews__item">
+            <blockquote class="review">
+              <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!</p>
+              <cite class="review__author">Анастасия Красильникова</cite>
+              <span class="review__username">@misssssiskras</span>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__next-btn reviews__next-review" type="button" aria-label="Следующий отзыв">
+            <svg class="controls__button-icon" width="50" height="26">
+              <use xlink:href="#arrowLeft"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__prev-btn reviews__prev-review" type="button" aria-label="Предыдущий отзыв">
+            <svg class="controls__button-icon" width="50" height="26">
+              <use xlink:href="#arrowRight"></use>
+            </svg>
+          </button>
+        </div>
+        <a href="blank.html" class="reviews__write button" aria-label="Написать собственный отзыв">Написать</a>
       </div>
-      <a href="blank.html" class="reviews__write button" aria-label="Написать собственный отзыв">Написать</a>
-
     </section>
     <section class="contacts">
       <h2 class="contacts__title title">Контакты</h2>

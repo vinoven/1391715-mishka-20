@@ -3,16 +3,36 @@
 }
 
 .review__text {
-  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 33px;
+
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+    margin-bottom: 60px;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    margin-bottom: 44px;
+  }
 }
 
 .review__author {
+  display: block;
+
   font-style: normal;
   font-weight: bold;
   line-height: 24px;
 }
 
 .review__username {
+  display: block;
+
   line-height: 30px;
   color: $basic-dark-gray;
 }

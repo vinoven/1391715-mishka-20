@@ -10,14 +10,13 @@
     grid-template-areas: "ecology handmade"
     "style manufacturer"
     "likes gift";
-    grid-template-columns: repeat(2, min-content);;
+    grid-template-columns: repeat(2, 1fr);;
   }
 }
 
 .features__item {
   display: flex;
   flex-direction: column;
-  min-width: 325px;
   padding-top: 30px;
 
   font-weight: bold;
