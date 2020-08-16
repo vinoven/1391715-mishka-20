@@ -1,12 +1,6 @@
 .features {
   padding-top: 30px;
   padding-bottom: 30px;
-
-  @media(desktop-width) {
-    display: grid;
-
-    grid-template-columns: repeat(6, 1fr) ;
-  }
 }
 
 .features__list {
@@ -16,13 +10,14 @@
     grid-template-areas: "ecology handmade"
     "style manufacturer"
     "likes gift";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, min-content);;
   }
 }
 
 .features__item {
   display: flex;
   flex-direction: column;
+  min-width: 325px;
   padding-top: 30px;
 
   font-weight: bold;
@@ -53,5 +48,7 @@
 }
 
 .features__item-icon {
+  margin-bottom: 23px;
+
   color: $accent-light-mint;
 }
