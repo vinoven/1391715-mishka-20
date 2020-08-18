@@ -1,8 +1,18 @@
 .page-footer {
   display: flex;
 
+  background-color: $bg-light-gray;
+
   @media (max-width: $mobile-only-width) {
     flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
   }
 }
 
