@@ -10,7 +10,7 @@
     grid-template-areas: "ecology handmade"
     "style manufacturer"
     "likes gift";
-    grid-template-columns: repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -29,18 +29,23 @@
   &--ecology {
     grid-area: ecology;
   }
+
   &--style {
     grid-area: style;
   }
+
   &--likes {
     grid-area: likes;
   }
+
   &--handmade {
     grid-area: handmade;
   }
+
   &--manufacturer {
     grid-area: manufacturer;
   }
+
   &--gift {
     grid-area: gift;
   }

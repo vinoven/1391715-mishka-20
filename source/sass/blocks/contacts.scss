@@ -1,21 +1,134 @@
+.contacts {
+  display: grid;
+  padding-top: 38px;
+  padding-bottom: 38px;
+
+  row-gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0;
+
+    grid-template: repeat(3, min-content);
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 0;
+  }
+}
+
+.contacts__info {
+  display: grid;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  row-gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 78px 0;
+    padding: 0;
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+  }
+}
+
+.contacts__info-header {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-column: 1 / -1;
+}
+
 .contacts__title {
   @media (max-width: $mobile-only-width) {
     font-size: 18px;
   }
 }
 
-.contacts__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
+.contacts__icon {
+  @media (max-width: $mobile-only-width) {
+    display: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    position: absolute;
+    left: -110px;
   }
 }
 
-.contacts__inner-container {
-  display: flex;
+.contacts__type {
+  display: grid;
+
+  grid-template-columns: 75px auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 80px auto;
+  }
+}
+
+.contacts__type-link {
+  border-bottom: 1px solid $accent-light-mint;
+}
+
+.contacts__map {
+  width: 100%;
+
+  background-image: url("../../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/map-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
+
+    background-image: url("../../img/map-desktop@1x.jpg");
+
+    grid-column: 4 / -1;
+    grid-row: 1 / 4;
+  }
+}
+
+.contacts__map iframe {
+  width: 100%;
+
+  border: 0;
+}
+
+.contacts__write {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+.contacts__write-btn {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
