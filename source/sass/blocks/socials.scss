@@ -1,11 +1,15 @@
+.socials {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+}
+
 .socials__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   order: 1;
-  width: 260px;
-  margin: 0 auto;
 
   border-bottom: 1px solid $decor-light-gray;
 }
