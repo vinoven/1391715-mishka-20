@@ -1,17 +1,14 @@
-.socials {
-  @media (min-width: $tablet-width) {
-    padding: 0 20px;
-  }
-}
-
 .socials__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  order: 1;
+  padding: 5px 0;
 
   border-bottom: 1px solid $decor-light-gray;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
 }
 
 .socials__item {

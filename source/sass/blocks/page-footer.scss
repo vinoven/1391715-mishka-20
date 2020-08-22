@@ -1,4 +1,6 @@
 .page-footer {
+  align-items: center;
+
   background-color: $bg-light-gray;
 
   @media (min-width: $tablet-width) {
@@ -9,18 +11,13 @@
     margin-top: 65px;
   }
 }
-
 .page-footer__wrapper {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-
-  @media (max-width: $mobile-only-width) {
-    flex-direction: column;
-  }
-
   @media (min-width: $tablet-width) {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
   }
 }
 
