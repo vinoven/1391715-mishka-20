@@ -11,6 +11,7 @@
     margin-top: 65px;
   }
 }
+
 .page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -25,6 +26,7 @@
   &:hover {
     color: $accent-dark-mint;
   }
+
   &:active {
     opacity: 0.3;
   }

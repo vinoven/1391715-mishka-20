@@ -10,20 +10,22 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas: "title title title tag"
-    "description description picture picture"
-    "properties properties picture picture"
-    "price price picture picture"
-    "buy buy picture picture";
+    grid-template-areas:
+      "title title title tag"
+      "description description picture picture"
+      "properties properties picture picture"
+      "price price picture picture"
+      "buy buy picture picture";
     grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: "tag title title picture picture picture"
-    ". description description picture picture picture"
-    ". properties properties picture picture picture"
-    ". price price picture picture picture"
-    ". buy buy picture picture picture";
+    grid-template-areas:
+      "tag title title picture picture picture"
+      ". description description picture picture picture"
+      ". properties properties picture picture picture"
+      ". price price picture picture picture"
+      ". buy buy picture picture picture";
     grid-template-columns: repeat(6, 1fr);
   }
 }

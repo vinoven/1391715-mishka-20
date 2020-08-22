@@ -121,7 +121,6 @@
     opacity: 1.3;
   }
 
-
   @media (min-width: $tablet-width) {
     padding: 26px 36px 26px 0;
   }
@@ -149,15 +148,10 @@
   }
 }
 
-.main-nav__item:not(:first-child)
-  .main-nav__item-link:not(.main-nav__item-link--cart):not(.main-nav__item-link--sale) {
+.main-nav__item:not(:first-child) > .main-nav__item-link:not(.main-nav__item-link--cart):not(.main-nav__item-link--sale) {
   @media (min-width: $desktop-width) {
     padding-left: 35px;
   }
-}
-
-.main-nav__item-link--sale {
-  padding-left: 27px;
 }
 
 .main-nav__item-link-icon {
