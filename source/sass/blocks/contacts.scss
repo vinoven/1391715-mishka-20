@@ -93,7 +93,7 @@
 
   @media (min-width: $desktop-width) {
     width: 527px;
-    height: 457px;
+    height: 455px;
     margin: 0;
 
     background-image: url("../../img/map-desktop@1x.jpg");
@@ -104,6 +104,7 @@
 }
 
 .contacts__map iframe {
+  display: block;
   width: 100%;
 
   border: 0;

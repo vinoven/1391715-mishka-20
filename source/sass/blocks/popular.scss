@@ -1,15 +1,14 @@
 .popular {
-  padding: 30px 0 35px 0;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .popular__item {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 0 50px;
 
     grid-template-areas: "title title title tag"
     "description description picture picture"
