@@ -76,7 +76,19 @@
 }
 
 .contacts__type-link {
+  position: relative;
+
   border-bottom: 1px solid $accent-light-mint;
+
+  &:hover {
+    color: $accent-dark-mint;
+
+    border-color: $accent-dark-mint;
+  }
+
+  &:active {
+    border-color: $accent-dark-mint-opacity;
+  }
 }
 
 .contacts__map {

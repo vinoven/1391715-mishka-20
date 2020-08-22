@@ -22,6 +22,13 @@
 }
 
 .page-footer__logo {
+  &:hover {
+    color: $accent-dark-mint;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $mobile-only-width) {
     display: none;
   }

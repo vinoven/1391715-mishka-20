@@ -18,4 +18,11 @@
   margin: 5px;
 
   color: $accent-light-mint;
+
+  &:hover {
+    color: $accent-dark-mint;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }

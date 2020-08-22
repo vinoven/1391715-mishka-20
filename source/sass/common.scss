@@ -50,6 +50,16 @@
 
   background-color: $basic-white;
   border: 2px solid $basic-dark-gray;
+
+  &:hover {
+    color: $basic-white;
+
+    background-color: $basic-dark-gray;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .form-fieldset {

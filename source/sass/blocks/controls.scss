@@ -9,8 +9,20 @@
   background-color: transparent;
   border: 1px solid $decor-light-gray;
 
+
+
   @media (min-width: $tablet-width) {
     border: 0;
+  }
+}
+
+.controls__button-icon {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
