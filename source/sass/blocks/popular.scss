@@ -1,13 +1,18 @@
 .popular {
-  padding: 25px 0 35px 0;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .popular__item {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas: "title title title tag"
-      "decription decription picture picture"
+    grid-template-areas:
+      "title title title tag"
+      "description description picture picture"
       "properties properties picture picture"
       "price price picture picture"
       "buy buy picture picture";
@@ -15,8 +20,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: "tag title title picture picture picture"
-      ". decription decription picture picture picture"
+    grid-template-areas:
+      "tag title title picture picture picture"
+      ". description description picture picture picture"
       ". properties properties picture picture picture"
       ". price price picture picture picture"
       ". buy buy picture picture picture";
@@ -26,6 +32,18 @@
 
 .popular__item-title {
   grid-area: title;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+
+    margin-top: 60px;
+    margin-right: -100%;
+    margin-bottom: 0;
+  }
 }
 
 .popular__item-tag {
@@ -34,32 +52,73 @@
   text-transform: uppercase;
 
   grid-area: tag;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-top: 5px;
+
+    text-align: center;
+
+    justify-self: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    padding-top: 10px;
+
+    justify-self: center;
+  }
 }
 
-.popular__item-decription {
+.popular__item-description {
+  margin-top: 18px;
+  margin-bottom: 28px;
+
   font-size: 15px;
   line-height: 24px;
   color: $basic-dark-gray;
 
-  grid-area: decription;
+  grid-area: description;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 48px;
+
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 38px;
+    margin-bottom: 60px;
   }
 }
 
 .popular__item-properties {
+  width: 100%;
   margin: 0;
+  margin-bottom: 28px;
 
+  border-collapse: collapse;
   font-size: 15px;
   color: $basic-dark-gray;
 
   grid-area: properties;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+
+.popular__item-properties tr {
+  padding: 12px 0;
+
+  border-bottom: 1px solid $decor-light-gray;
 }
 
 .popular__item-property-value {
   margin: 0;
+  padding: 12px 0;
 }
 
 .popular__item-picture {
@@ -68,7 +127,12 @@
 
   grid-area: picture;
 
+  @media (max-width: $mobile-only-width) {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: $tablet-width) {
+    align-self: end;
     width: 333px;
     height: 404px;
   }
@@ -80,6 +144,9 @@
 }
 
 .popular__item-price {
+  align-self: center;
+  margin-bottom: 25px;
+
   font-weight: bold;
   line-height: 24px;
   color: $basic-dark-gray;
@@ -88,6 +155,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+
+    justify-self: center;
   }
 }
 

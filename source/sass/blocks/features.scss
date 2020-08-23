@@ -1,14 +1,75 @@
+.features {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.features__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
+}
+
+.features__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-areas:
+      "ecology handmade"
+      "style manufacturer"
+      "likes gift";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-template-areas:
+      ". ecology handmade"
+      ". style manufacturer"
+      ". likes gift";
+    grid-template-columns: 175px repeat(2, 350px);
+  }
+}
+
 .features__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
   }
+
+  &--ecology {
+    grid-area: ecology;
+  }
+
+  &--style {
+    grid-area: style;
+  }
+
+  &--likes {
+    grid-area: likes;
+  }
+
+  &--handmade {
+    grid-area: handmade;
+  }
+
+  &--manufacturer {
+    grid-area: manufacturer;
+  }
+
+  &--gift {
+    grid-area: gift;
+  }
 }
 
-.features__list {
-  @media (min-width: $tablet-width) {
-    columns: 2;
-  }
+.features__item-icon {
+  margin-bottom: 23px;
+
+  color: $accent-light-mint;
 }

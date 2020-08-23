@@ -9,8 +9,12 @@
   clip: rect(0 0 0 0);
 }
 
+.icon-sprite {
+  display: none;
+}
+
 .container {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0 30px;
 
@@ -33,16 +37,29 @@
 }
 
 .button {
-  padding: 0;
+  display: block;
+  width: 260px;
+  padding: 16px 0;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  text-align: center;
   color: $basic-dark-gray;
   text-transform: uppercase;
 
   background-color: $basic-white;
   border: 2px solid $basic-dark-gray;
+
+  &:hover {
+    color: $basic-white;
+
+    background-color: $basic-dark-gray;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .form-fieldset {

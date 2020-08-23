@@ -1,5 +1,29 @@
+.made-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  padding: 10px 0;
+}
+
 .made-by__text {
+  margin-right: 20px;
+
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+}
+
+.made-by__icon {
+  margin: 5px;
+
+  color: $accent-light-mint;
+
+  &:hover {
+    color: $accent-dark-mint;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

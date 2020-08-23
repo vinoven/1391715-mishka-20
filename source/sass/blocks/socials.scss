@@ -1,4 +1,32 @@
 .socials__list {
   display: flex;
-  order: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+
+  border-bottom: 1px solid $decor-light-gray;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+}
+
+.socials__item {
+  margin: 10px;
+}
+
+.socials__item-link {
+  padding: 10px;
+
+  &:hover .socials__item-icon {
+    color: $accent-dark-mint;
+  }
+
+  &:active .socials__item-icon {
+    opacity: 0.3;
+  }
+}
+
+.socials__item-icon {
+  color: $basic-black;
 }
