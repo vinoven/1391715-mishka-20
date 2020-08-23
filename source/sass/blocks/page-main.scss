@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     height: 230px;
+    padding-top: 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,13 +42,20 @@
 .page-main__title {
   margin: 0 auto;
 
+  font-size: 27px;
   text-align: center;
 
   @media (min-width: $mobile-width) {
     display: block;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

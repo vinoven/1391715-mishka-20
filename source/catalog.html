@@ -6,6 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог товаров - Интернет-магазин товаров ручной работы "Мишка"</title>
+
+  <!-- Pixel Glass -->
+  <style>
+  html {
+    /* По умолчанию мобильный макет */
+    background-image: url( "img/index-mobile.png" );
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  /* Мобильный */
+  @media ( min-width: 320px ) {
+    html {
+      /* Планшетный макет */
+      background-image: url( "./pixel-glass/catalog/Mobile.png" );
+    }
+  }
+
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    html {
+      /* Планшетный макет */
+      background-image: url( "./pixel-glass/catalog/Tablet.png"  );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1150px ) {
+    html {
+      /* Десктопный макет */
+      background-image: url( "./pixel-glass/catalog/Desktop.png"   );
+    }
+  }
+
+  body {
+    opacity: 0.5;
+  }
+
+</style>
+
+<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+<script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
+
 </head>
 
 <body class="page__body">
@@ -218,16 +262,16 @@
     </nav>
   </header>
 
-  <main class="page-main container">
+  <main class="page-main">
     <div class="page-main__title-container">
       <h1 class="page-main__title title">Каталог товаров</h1>
     </div>
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Все товары</h2>
       <ul class="catalog__list list">
         <li class="catalog__item">
-          <a href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+          <a class="catalog__item-link"  href="blank.html" aria-label="Перейти к подробному описанию товара">
+            <img class="catalog__item-picture" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195"
               alt="Изображение вязаного игрушечного зайца">
           </a>
 
@@ -242,7 +286,7 @@
         </li>
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+            <img class="catalog__item-picture" src="./img/photo-bowl-mobile@1x.jpg" width="260" height="195"
               alt="Изображение вязаной корзинки для белья в белом и коралловом цветах">
           </a>
 
@@ -257,7 +301,7 @@
         </li>
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="https://via.placeholder.com/260x195" width="260" height="195"
+            <img class="catalog__item-picture" src="./img/photo-toys-mobile@1x.jpg" width="260" height="195"
               alt="Изображение вязаной корзинки для игрушек в белом и салатовом цветах">
           </a>
 
