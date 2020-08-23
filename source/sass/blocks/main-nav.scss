@@ -24,6 +24,7 @@
 }
 
 .main-nav__logo[href] {
+  color: $basic-black;
   &:hover {
     opacity: 0.6;
   }
