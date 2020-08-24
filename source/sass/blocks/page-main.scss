@@ -47,7 +47,9 @@
 
   @media (min-width: $mobile-width) {
     display: block;
+  }
 
+  @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }

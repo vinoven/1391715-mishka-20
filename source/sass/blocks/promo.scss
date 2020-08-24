@@ -1,6 +1,11 @@
 .promo {
   display: flex;
   flex-direction: column;
+  margin-bottom: 58px;
+  padding-top: 22px;
+  padding-bottom: 33px;
+
+  border: 1px solid $decor-light-gray;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -8,19 +13,44 @@
   }
 }
 
+.promo__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.promo__video-icon {
+  color: $accent-light-mint;
+}
+
 .promo__title {
+  margin: 0;
+
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
 
   @media (max-width: $mobile-only-width) {
-    order: -1;
+    width: 130px;
+    margin-left: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }
 
 .promo__text {
+  margin: 0;
+  margin-bottom: 39px;
+
   font-size: 13px;
   line-height: 24px;
   color: $basic-dark-gray;
+
+  @media (max-width: $mobile-only-width) {
+    margin-right: -3px; //Только для pixel-perfect. Возмозжно, стоит принебречь.
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -28,9 +58,17 @@
   }
 }
 
+.promo__media {
+  position: relative;
+
+  margin-bottom: 33px;
+}
+
 .promo__media video {
+  display: block;
   width: 260px;
   height: 150px;
+
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
@@ -41,4 +79,14 @@
   @media (min-width: $desktop-width) {
     width: 682px;
   }
+}
+
+.promo__video-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.promo__buy {
+  width: 100%;
 }

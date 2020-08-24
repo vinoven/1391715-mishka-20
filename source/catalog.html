@@ -218,6 +218,14 @@
           d="M24.108,6.7c0.521-0.05,1.045-0.226,1.477-0.524c0.085-0.072,0.171-0.144,0.256-0.216c0.52-0.335,0.972-0.827,0.728-1.361 c-0.504-1.105-0.423-2.231-0.416-3.414c0.006-0.958-0.963-1.246-1.781-1.174c-0.723,0.063-2.168,0.581-2.175,1.52 c-0.006,0.993-0.071,2.016,0.109,2.992c-0.047,0.113-0.074,0.239-0.104,0.355c-0.055,0.212,0.016,0.42,0.142,0.59 c0,0.045,0.002,0.089,0.002,0.134c0.005,0.112,0.01,0.224,0.015,0.335c0.073,0.232,0.216,0.409,0.429,0.53 C23.178,6.7,23.668,6.742,24.108,6.7z" />
       </g>
     </symbol>
+
+    <symbol id="icon-video" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+      <g transform="translate(0 192)" fill="currentColor">
+        <path
+          d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z" />
+      </g>
+    </symbol>
+
   </svg>
 
   <header class="page-header container">
@@ -270,7 +278,7 @@
       <h2 class="visually-hidden">Все товары</h2>
       <ul class="catalog__list list">
         <li class="catalog__item">
-          <a class="catalog__item-link"  href="blank.html" aria-label="Перейти к подробному описанию товара">
+          <a class="catalog__item-link" href="blank.html" aria-label="Перейти к подробному описанию товара">
             <img class="catalog__item-picture" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195"
               alt="Изображение вязаного игрушечного зайца">
           </a>
@@ -316,19 +324,26 @@
         </li>
       </ul>
     </section>
-    <section class="promo">
-      <div class="promo__media">
-        <video class="promo__video" width="260" height="150" poster="https://via.placeholder.com/682x455">
-          <source src="video.mp4" type="video/mp4">
-        </video>
-        <button type="button"><span class="visually-hidden">Смотреть видео</span></button>
-      </div>
-      <div class="promo__info">
-        <h2 class="promo__title">Процесс производства</h2>
-        <p class="promo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="promo__buy button" href="blank.html"><span>Сделать заказ</span></a>
-      </div>
-    </section>
+    <div class="container">
+      <section class="promo">
+        <header class="promo__header inner-container">
+          <svg class="promo__video-icon" width="32" height="32">
+            <use xlink:href="#icon-video"></use>
+          </svg>
+          <h2 class="promo__title">Процесс производства</h2>
+        </header>
+        <div class="promo__media">
+          <video class="promo__video" width="260" height="150" poster="https://via.placeholder.com/682x455">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <button class="promo__video-play" type="button"><span class="visually-hidden">Смотреть видео</span></button>
+        </div>
+        <div class="promo__info inner-container">
+          <p class="promo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="promo__buy button" href="blank.html"><span>Сделать заказ</span></a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">

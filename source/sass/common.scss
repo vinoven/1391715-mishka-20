@@ -29,6 +29,11 @@
   }
 }
 
+.inner-container {
+  padding-right: 34px;
+  padding-left: 34px;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -38,7 +43,7 @@
 
 .button {
   display: block;
-  width: 260px;
+  width: 100%;
   padding: 16px 0;
 
   font-weight: bold;
@@ -50,6 +55,18 @@
 
   background-color: $basic-white;
   border: 2px solid $basic-dark-gray;
+
+  &--size-s {
+    width: 175px;
+  }
+
+  &--size-m {
+    width: 230px;
+  }
+
+  &--size-l {
+    width: 292px;
+  }
 
   &:hover {
     color: $basic-white;
