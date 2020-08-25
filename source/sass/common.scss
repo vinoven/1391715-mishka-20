@@ -32,6 +32,11 @@
 .inner-container {
   padding-right: 34px;
   padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .list {

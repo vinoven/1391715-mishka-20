@@ -7,6 +7,10 @@
 
   border: 1px solid $decor-light-gray;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -17,6 +21,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .promo__video-icon {
@@ -36,7 +44,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 33px;
+
     font-size: 20px;
+  }
+}
+
+.promo__info {
+  @media (min-width: $tablet-width) {
+    order: 3;
   }
 }
 
@@ -62,6 +78,10 @@
   position: relative;
 
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .promo__media video {
@@ -83,8 +103,29 @@
 
 .promo__video-play {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+
+  width: 101px;
+  height: 77px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url(../../img/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
+.promo__video-play:focus,
+.promo__video-play:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.promo__video-play:active {
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0.3;
 }
 
 .promo__buy {
