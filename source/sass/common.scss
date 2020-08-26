@@ -125,3 +125,12 @@
     line-height: 30px;
   }
 }
+
+
+.modal {
+  position: fixed;
+
+  &--hidden {
+    display: none;
+  }
+}
