@@ -97,7 +97,15 @@
   color: $basic-dark-gray;
   text-transform: uppercase;
 
-  border: 2px solid $basic-dark-gray;
+  border: 2px solid $basic-dark-gray-opacity-10;
+
+  &:hover {
+    border-color: $basic-dark-gray-opacity-30;
+  }
+
+  &:active {
+    border-color: $accent-light-mint;
+  }
 
   @media (min-width: $tablet-width) {
     width: 112px;

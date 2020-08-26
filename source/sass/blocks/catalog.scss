@@ -27,6 +27,15 @@
 
   border: 1px solid $decor-light-gray;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     min-height: auto;
@@ -101,6 +110,14 @@
   font-weight: bold;
   line-height: 24px;
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3  ;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
