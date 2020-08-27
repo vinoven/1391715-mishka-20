@@ -7,12 +7,21 @@
 
   border: 1px solid $decor-light-gray;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
+    padding-bottom: 0;
   }
 }
 
@@ -69,7 +78,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 53px;
 
     grid-column: 2 / 3;
   }
