@@ -5,6 +5,19 @@
   @media (min-width: $tablet-width) {
     margin-top: -10px;
   }
+
+  &::after {
+    content: "";
+
+    display: block;
+    height: 6px;
+    margin: 0 calc(50% - 50vw);
+
+    background-image: url(../../img/bg-zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .popular__item {
