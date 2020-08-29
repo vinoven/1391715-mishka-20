@@ -1,0 +1,45 @@
+.radio__label {
+  display: flex;
+  align-items: center;
+}
+
+.radio__label::before {
+  content: "";
+
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+
+  background-color: $basic-white;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px $basic-dark-gray, inset 0 0 0 12px $basic-white;
+}
+
+.radio__button:focus-within + .radio__label::before {
+  box-shadow: inset 0 0 0 2px $accent-light-mint, inset 0 0 0 12px $basic-white;
+}
+
+.radio__button:checked + .radio__label::before {
+  background-color: $accent-light-mint;
+}
+
+.radio__button:disabled + .radio__label::before {
+  box-shadow: inset 0 0 0 2px $basic-dark-gray-opacity-30,
+  inset 0 0 0 12px $basic-white;
+}
+
+.radio__button:checked:disabled + .radio__label::before {
+  background-color: $basic-dark-gray-opacity-30;
+  box-shadow: inset 0 0 0 2px $basic-dark-gray-opacity-30,
+  inset 0 0 0 12px $basic-white;
+}
+
+.radio:hover .radio__button:not(:disabled) + .radio__label::before {
+  box-shadow: inset 0 0 0 2px $accent-light-mint, inset 0 0 0 12px $basic-white;
+}
+
+.radio:active .radio__button:not(:disabled) + .radio__label::before {
+  box-shadow: inset 0 0 0 2px $basic-dark-gray-opacity-30,
+  inset 0 0 0 12px $basic-white;
+}
