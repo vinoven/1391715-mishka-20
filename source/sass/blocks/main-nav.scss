@@ -25,6 +25,7 @@
 
 .main-nav__logo[href] {
   color: $basic-black;
+
   &:hover {
     opacity: 0.6;
   }
@@ -78,7 +79,9 @@
 }
 
 .main-nav__list--primary li {
-  padding-left: 35px;
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+  }
 }
 
 .main-nav__list--secondary {

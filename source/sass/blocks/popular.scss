@@ -13,7 +13,7 @@
     height: 6px;
     margin: 0 calc(50% - 50vw);
 
-    background-image: url(../../img/bg-zigzag-line.svg);
+    background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: center;
     background-size: cover;
@@ -28,19 +28,19 @@
     display: grid;
 
     grid-template-areas: "title title title title tag"
-    "description description gap picture picture"
-    "properties properties gap picture picture"
-    "price price gap picture picture"
-    "buy buy gap picture picture";
+      "description description gap picture picture"
+      "properties properties gap picture picture"
+      "price price gap picture picture"
+      "buy buy gap picture picture";
     grid-template-columns: repeat(2, 146px) 42px repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "tag title title . picture picture picture"
-    ". description description . picture picture picture"
-    ". properties properties . picture picture picture"
-    ". price price . picture picture picture"
-    ". buy buy . picture picture picture";
+      ". description description . picture picture picture"
+      ". properties properties . picture picture picture"
+      ". price price . picture picture picture"
+      ". buy buy . picture picture picture";
     grid-template-columns: repeat(3, 155px) 60px repeat(3, 1fr);
   }
 }

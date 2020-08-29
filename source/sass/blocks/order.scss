@@ -146,11 +146,6 @@
       display: none;
     }
   }
-
-  &--fullname {
-    @media (min-width: $tablet-width) {
-    }
-  }
 }
 
 .order__field-name {
@@ -225,6 +220,7 @@
   &--phone {
     top: calc(50% - 14px);
   }
+
   &--mail {
     top: calc(50% - 16px);
   }

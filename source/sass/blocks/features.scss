@@ -14,8 +14,8 @@
     display: grid;
 
     grid-template-areas: "ecology handmade"
-    "style manufacturer"
-    "likes gift";
+      "style manufacturer"
+      "likes gift";
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -23,8 +23,8 @@
     display: grid;
 
     grid-template-areas: ". ecology handmade"
-    ". style manufacturer"
-    ". likes gift";
+      ". style manufacturer"
+      ". likes gift";
     grid-template-columns: 175px repeat(2, 350px);
   }
 }
