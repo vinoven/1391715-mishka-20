@@ -181,6 +181,25 @@
       </g>
     </symbol>
 
+    <symbol id="icon-phone" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333">
+      <g fill="currentColor">
+        <g>
+          <g>
+            <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
+          </g>
+        </g>
+        <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
+        <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
+        <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
+      </g>
+    </symbol>
+
+    <symbol id="icon-mail" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+    </symbol>
+
+
+
   </svg>
 
   <header class="page-header container">
@@ -229,122 +248,162 @@
     <div class="page-main__title-container">
       <h1 class="page-main__title title">Вязание на заказ</h1>
     </div>
-    <form class="order container" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+    <form class="order" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="order__desc container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.
       </p>
-      <fieldset class="order__fieldset order__fieldset-list--type form-fieldset">
-        <span class="order__fieldset-name">Тип</span>
-        <ul class="order__fieldset-list list">
-          <li class="radio">
-            <input class="radio__button visually-hidden" type="radio" name="type" id="interrior" value="interrior" checked>
-            <label class="order__field-name radio__label" for="interrior">Аксессуар для интерьера</label>
-          </li>
-          <li class="radio">
-            <input class="radio__button visually-hidden" type="radio" name="type" id="toy" value="toy">
-            <label class="order__field-name radio__label" for="toy">Детская игрушка</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="order__fieldset-wrapper">
+        <fieldset class="order__fieldset container order__fieldset-list--type">
+          <span class="order__fieldset-name">Тип</span>
+          <ul class="order__fieldset-list list">
+            <li class="radio">
+              <input class="radio__button visually-hidden" type="radio" name="type" id="interrior" value="interrior" checked>
+              <label class="order__field-name radio__label" for="interrior">Аксессуар для интерьера</label>
+            </li>
+            <li class="radio">
+              <input class="radio__button visually-hidden" type="radio" name="type" id="toy" value="toy">
+              <label class="order__field-name radio__label" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
-      <fieldset class="order__fieldset order__fieldset--color form-fieldset">
-        <span class="order__fieldset-name">Цвет</span>
-        <ul class="order__fieldset-list order__fieldset-list--color list">
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-white" value="white" checked>
-            <label class="order__field-name check__label" for="color-white">Белый</label>
-          </li>
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-gray" value="gray" checked>
-            <label class="order__field-name check__label" for="color-gray">Серый</label>
-          </li>
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-tiffany" value="tiffany">
-            <label class="order__field-name check__label" for="color-tiffany">«Тиффани»</label>
-          </li>
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-black" value="black">
-            <label class="order__field-name check__label" for="color-black">Черный</label>
-          </li>
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-pink" value="pink" checked disabled>
-            <label class="order__field-name check__label" for="color-pink">Розовый</label>
-          </li>
-          <li class="check">
-            <input class="check__box visually-hidden" type="checkbox" name="color" id="color-orange" value="orange" disabled>
-            <label class="order__field-name check__label" for="color-orange">Оранжевый</label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="order__fieldset-wrapper">
+        <fieldset class="order__fieldset container order__fieldset--color">
+          <span class="order__fieldset-name">Цвет</span>
+          <ul class="order__fieldset-list order__fieldset-list--color list">
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-white" value="white" checked>
+              <label class="order__field-name check__label" for="color-white">Белый</label>
+            </li>
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-gray" value="gray" checked>
+              <label class="order__field-name check__label" for="color-gray">Серый</label>
+            </li>
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-tiffany" value="tiffany">
+              <label class="order__field-name check__label" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-black" value="black">
+              <label class="order__field-name check__label" for="color-black">Черный</label>
+            </li>
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-pink" value="pink" checked disabled>
+              <label class="order__field-name check__label" for="color-pink">Розовый</label>
+            </li>
+            <li class="check">
+              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-orange" value="orange" disabled>
+              <label class="order__field-name check__label" for="color-orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
-      <fieldset class="order__fieldset form-fieldset">
-        <span class="order__fieldset-name">ФИО</span>
-        <ul class="order__fieldset-list order__fieldset-list--userdata list">
-          <li>
-            <label class="order__field-name" for="first-name">Имя:</label>
-            <input class="order__field-user-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
-          </li>
-          <li>
-            <label class="order__field-name" for="second-name">Фамилия:</label>
-            <input class="order__field-user-input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" required>
-          </li>
-          <li>
-            <label class="order__field-name" for="mid-name">Отчество:</label>
-            <input class="order__field-user-input" type="text" name="mid-name" id="mid-name" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
-      </fieldset>
+      <div class="order__fieldset-wrapper">
+        <fieldset class="order__fieldset container">
+          <span class="order__fieldset-name order__fieldset-name--fullname">ФИО</span>
+          <ul class="order__fieldset-list order__fieldset-list--userdata list">
+            <li>
+              <label class="order__field-name" for="first-name">Имя:</label>
+              <input class="order__field-user-input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li>
+              <label class="order__field-name" for="second-name">Фамилия:</label>
+              <input class="order__field-user-input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" required>
+            </li>
+            <li>
+              <label class="order__field-name" for="mid-name">Отчество:</label>
+              <input class="order__field-user-input" type="text" name="mid-name" id="mid-name" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
-      <fieldset class="order__fieldset form-fieldset">
-        <span class="order__fieldset-name">Тел</span>
-        <label for="phone-number">
-          <input class="order__field-user-input" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-            aria-label="Поле для ввода номера телефона" required>
-        </label>
-      </fieldset>
+      <div class="order__fieldset-wrapper">
+        <fieldset class="order__fieldset container">
+          <div class="order__fieldset-inner-container">
+            <span class="order__fieldset-name">Тел</span>
+            <label for="phone-number">
+              <input class="order__field-user-input" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                aria-label="Поле для ввода номера телефона" required>
+                <svg class="order__contacts-icon order__contacts-icon--phone" width="25" height="25">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+            </label>
+          </div>
+          <div class="order__fieldset-inner-container">
+            <span class="order__fieldset-name">e-mail</span>
+            <label for="e-mail">
+              <input class="order__field-user-input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*"
+                aria-label="Поле для ввода адреса электронной почты" required>
+                <svg class="order__contacts-icon order__contacts-icon--mail" width="32" height="32">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+            </label>
+          </div>
+        </fieldset>
+      </div>
 
-      <fieldset class="order__fieldset form-fieldset">
-        <span class="order__fieldset-name">e-mail</span>
-        <label for="e-mail">
-          <input class="order__field-user-input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*"
-            aria-label="Поле для ввода адреса электронной почты" required>
-        </label>
-      </fieldset>
+      <div class="order__fieldset-wrapper">
+        <fieldset class="order__fieldset container">
+          <span class="order__fieldset-name">Доп</span>
+          <label for="comment">
+            <textarea class="order__field-user-input order__field-user-input--textarea" name="comment" id="comment"
+              placeholder="Опишите все ваши пожелания к заказу" aria-label="Поле для ввода комментария к заказу"></textarea>
+          </label>
+        </fieldset>
+      </div>
 
-      <fieldset class="order__fieldset form-fieldset">
-        <span class="order__fieldset-name">Доп</span>
-        <label for="comment">
-          <textarea class="order__field-user-input order__field-user-input--textarea" name="comment" id="comment" cols="30" rows="10"
-            placeholder="Опишите все ваши пожелания к заказу" aria-label="Поле для ввода комментария к заказу"></textarea>
-        </label>
-      </fieldset>
-
-      <p class="order__text">*Поля обязательны для заполнения</p>
-
-      <button class="order__submit button" type="submit"><span>Отправить заказ</span></button>
+      <footer class="order__footer container">
+        <p class="order__footer-text">*Поля обязательны для заполнения</p>
+        <button class="order__submit button" type="submit"><span>Отправить заказ</span></button>
+      </footer>
     </form>
   </main>
 
+
   <footer class="page-footer">
-    <h2 class="visually-hidden">Дополнительная информация об интернет-магазине и сайте</h2>
-    <a class="page-footer__logo logo" href="index.html">
-      <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Интернет-магазина Мишка">
-    </a>
-    <section class="socials">
-      <h3 class="visually-hidden">Наши социальные сети</h3>
-      <ul class="socials__list list">
-        <li class="socials__item socials__item--instagram"><a href="https://vk.com/" aria-label="Мы в соцсети Вконтакте">ins</a></li>
-        <li class="socials__item socials__item--facebook"><a href="https://facebook.com/" aria-label="Мы в соцсети Фейсбук">fb</a></li>
-        <li class="socials__item socials__item--twitter"><a href="https://instagram.com/" aria-label="Мы в соцсети Инстаграм">tw</a></li>
-      </ul>
-    </section>
-    <section class="made-by">
-      <h3 class="visually-hidden">Сайт разработан:</h3>
-      <span class="made-by__text">Разработано</span>
-      <a class="made-by__developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">
-        <img src="https://via.placeholder.com/27x35" width="27" height="35" alt="Логотип разработчика сайта - HTML Academy">
+    <div class="page-footer__wrapper container">
+      <h2 class="visually-hidden">Дополнительная информация об интернет-магазине и сайте</h2>
+      <a class="page-footer__logo logo">
+        <svg class="page-footer__logo-pic" width="102" height="35" alt="Логотип Интернет-магазина Мишка">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
       </a>
-    </section>
+      <section class="page-footer__socials socials">
+        <h3 class="visually-hidden">Наши социальные сети</h3>
+        <ul class="socials__list list">
+          <li class="socials__item socials__item--instagram">
+            <a class="socials__item-link" href="https://instagram.com/" aria-label="Мы в соцсети"><span class="visually-hidden">Инстаграм</span>
+              <svg class="socials__item-icon" width="22" height="22">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item socials__item--facebook"><a class="socials__item-link" href="https://facebook.com/" aria-label="Мы в соцсети"><span
+                class="visually-hidden">Фейсбук</span>
+              <svg class="socials__item-icon" width="15" height="28">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a></li>
+          <li class="socials__item socials__item--twitter"><a class="socials__item-link" href="https://instagram.com/" aria-label="Мы в соцсети"><span
+                class="visually-hidden">Твиттер</span>
+              <svg class="socials__item-icon" width="24" height="21">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a></li>
+        </ul>
+      </section>
+      <section class="page-footer__made-by made-by">
+        <h3 class="visually-hidden">Сайт разработан:</h3>
+        <span class="made-by__text">Разработано</span>
+        <a class="made-by__developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">
+          <svg class="made-by__icon" width="28" height="35" alt="Логотип разработчика сайта - HTML Academy">
+            <use xlink:href="#academy-logo"></use>
+          </svg>
+        </a>
+      </section>
   </footer>
   </div>
 

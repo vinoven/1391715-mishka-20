@@ -15,10 +15,13 @@
   margin-right: 20px;
   padding: 10px;
 
-  background-color: $basic-white;
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid $basic-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .check__label::after {
