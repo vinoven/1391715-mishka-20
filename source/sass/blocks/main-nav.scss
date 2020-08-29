@@ -71,9 +71,14 @@
     position: static;
 
     order: 1;
+    margin-left: -35px;
 
     font-size: 17px;
   }
+}
+
+.main-nav__list--primary li {
+  padding-left: 35px;
 }
 
 .main-nav__list--secondary {
@@ -146,12 +151,6 @@
 
   &--sale {
     padding-left: 27px;
-  }
-}
-
-.main-nav__item:not(:first-child) > .main-nav__item-link:not(.main-nav__item-link--cart):not(.main-nav__item-link--sale) {
-  @media (min-width: $desktop-width) {
-    padding-left: 35px;
   }
 }
 
