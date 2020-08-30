@@ -6,14 +6,14 @@
   padding-bottom: 46px;
 
   background-color: $basic-white;
-  border-top: 1px solid $decor-semi-light-gray;
-  border-bottom: 1px solid $decor-semi-light-gray;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border-top: $thin-light-gray;
+  border-bottom: $thin-light-gray;
+  box-shadow: 0 5px 10px $basic-black-opacity-40;
 
   @media (min-width: $tablet-width) {
     left: calc(50% - 285px);
 
-    border: 1px solid $decor-semi-light-gray;
+    border: $thin-light-gray;
   }
 }
 
@@ -51,12 +51,16 @@
 .add-to-cart__form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .add-to-cart__options {
   display: flex;
+  border: 0;
+  padding: 0;
+
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 31px;
 }
 
@@ -69,6 +73,7 @@
 
 .add-to-cart__options-list {
   display: flex;
+  width: 350px;
   flex-wrap: wrap;
 }
 
