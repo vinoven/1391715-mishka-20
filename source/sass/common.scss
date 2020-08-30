@@ -119,11 +119,34 @@
   }
 }
 
-
 .modal {
   position: fixed;
 
   &--hidden {
-    display: none;
+      // display: none;
   }
+}
+
+.page__body::after {
+  display: block;
+  width: 1px;
+  content: "";
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  background-color: fuchsia;
+  z-index: 999;
+  top: 0;
+}
+
+.page__body::before {
+  display: block;
+  width: 100%;
+  content: "";
+  height: 1px;
+  position: fixed;
+  top: 50%;
+  background-color: fuchsia;
+  z-index: 999;
+  left: 0;
 }

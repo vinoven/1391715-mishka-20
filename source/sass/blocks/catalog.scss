@@ -28,7 +28,7 @@
   border: 1px solid $decor-light-gray;
 
   &:hover {
-    box-shadow: 0 6px 10px $basic-black-opacity-10;
+    box-shadow: $dark-shadow;
   }
 
   &:active {

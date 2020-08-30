@@ -1,5 +1,8 @@
 .add-to-cart {
-  top: calc(50% - 183px);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   min-height: 336px;
   padding-top: 29px;
@@ -10,21 +13,26 @@
   border-bottom: $thin-light-gray;
   box-shadow: 0 5px 10px $basic-black-opacity-40;
 
-  @media (min-width: $tablet-width) {
-    left: calc(50% - 285px);
+  @media (min-width: $mobile-width) {
+    width: 100%;
+  }
 
+  @media (min-width: $tablet-width) {
     border: $thin-light-gray;
+    width: 566px;
   }
 }
 
 .add-to-cart__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding: 0 30px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-only-width) {
+    width: $mobile-width;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 108px;
+    padding: 0 105px;
   }
 }
 
@@ -48,12 +56,6 @@
   }
 }
 
-.add-to-cart__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .add-to-cart__options {
   display: flex;
   border: 0;
@@ -73,8 +75,12 @@
 
 .add-to-cart__options-list {
   display: flex;
-  width: 350px;
+  width: 260px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }
 
 .add-to-cart__options-item {
@@ -125,7 +131,15 @@ input:checked + .add-to-cart__option-name {
 .add-to-cart__option-submit {
   line-height: 16px;
   color: $basic-white;
-
+  width: 350px;
   background-color: $accent-light-mint;
   border: 0;
+
+  @media (min-width: $mobile-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }
