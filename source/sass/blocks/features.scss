@@ -1,6 +1,14 @@
 .features {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+  }
 }
 
 .features__title {
