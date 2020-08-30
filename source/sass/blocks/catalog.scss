@@ -29,6 +29,8 @@
 
   &:hover {
     box-shadow: $dark-shadow;
+
+    transition: box-shadow 0.1s;
   }
 
   &:active {

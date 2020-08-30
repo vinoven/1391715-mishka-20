@@ -84,6 +84,8 @@
     color: $accent-dark-mint;
 
     border-color: $accent-dark-mint;
+
+    transition: color, border-color 0.2s;
   }
 
   &:active {
@@ -95,12 +97,12 @@
   width: 100vw;
   margin: 0 calc(50% - 50vw);
 
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +110,7 @@
     height: 455px;
     margin: 0;
 
-    background-image: url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
 
     grid-column: 4 / -1;
     grid-row: 1 / 4;

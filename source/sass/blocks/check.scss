@@ -42,6 +42,8 @@
 
 .check__box:focus + .check__label::before {
   border: 2px solid $accent-light-mint;
+
+  transition: box-shadow 0.15s;
 }
 
 .check__box:checked + .check__label::after {
@@ -62,8 +64,12 @@
 
 .check:hover .check__box:not(:disabled) + .check__label::before {
   border: 2px solid $accent-light-mint;
+
+  transition: box-shadow 0.15s;
 }
 
 .check:active .check__box:not(:disabled) + .check__label::before {
   border: 2px solid $basic-dark-gray-opacity-30;
+
+  transition: box-shadow 0.15s;
 }

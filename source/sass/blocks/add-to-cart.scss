@@ -1,8 +1,7 @@
 .add-to-cart {
   position: fixed;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
 
   min-height: 336px;
   padding-top: 29px;
@@ -12,20 +11,22 @@
   border-top: $thin-light-gray;
   border-bottom: $thin-light-gray;
   box-shadow: 0 5px 10px $basic-black-opacity-40;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $mobile-width) {
     width: 100%;
   }
 
   @media (min-width: $tablet-width) {
-    border: $thin-light-gray;
     width: 566px;
+
+    border: $thin-light-gray;
   }
 }
 
 .add-to-cart__wrapper {
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 
   @media (max-width: $mobile-only-width) {
     width: $mobile-width;
@@ -58,12 +59,12 @@
 
 .add-to-cart__options {
   display: flex;
-  border: 0;
-  padding: 0;
-
-  margin-left: 0;
   margin-right: 0;
   margin-bottom: 31px;
+  margin-left: 0;
+  padding: 0;
+
+  border: 0;
 }
 
 .add-to-cart__options-header {
@@ -75,8 +76,8 @@
 
 .add-to-cart__options-list {
   display: flex;
-  width: 260px;
   flex-wrap: wrap;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     width: 350px;
@@ -113,10 +114,14 @@
 
   &:hover {
     border-color: $basic-dark-gray-opacity-30;
+
+    transition: border-color 0.3s;
   }
 
   &:active {
     border-color: $accent-light-mint;
+
+    transition: border-color 0.1s;
   }
 
   @media (min-width: $tablet-width) {
@@ -129,9 +134,11 @@ input:checked + .add-to-cart__option-name {
 }
 
 .add-to-cart__option-submit {
+  width: 350px;
+
   line-height: 16px;
   color: $basic-white;
-  width: 350px;
+
   background-color: $accent-light-mint;
   border: 0;
 

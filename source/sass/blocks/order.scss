@@ -136,7 +136,7 @@
   &::after {
     content: "";
 
-    flex: 1;
+    flex-grow: 1;
     height: 1px;
     margin-left: 20px;
 
@@ -181,6 +181,8 @@
   &:focus {
     border-bottom: 2px solid $accent-light-mint;
     outline: none;
+
+    transition: border-color 0.2s;
   }
 
   &--textarea {
@@ -201,6 +203,8 @@
 .order__field-user-input:hover + .order__contacts-icon,
 .order__field-user-input:focus + .order__contacts-icon {
   color: $accent-light-mint;
+
+  transition: color 0.2s;
 }
 
 .order__field-user-input::placeholder {

@@ -9,10 +9,14 @@
 
   &:hover {
     box-shadow: $dark-shadow;
+
+    transition: box-shadow 0.1s;
   }
 
   &:active {
     box-shadow: 0 3px 5px $basic-black-opacity-10;
+
+    transition: box-shadow 0.1s;
   }
 
   @media (min-width: $tablet-width) {
@@ -150,7 +154,7 @@
   padding: 0;
 
   background-color: transparent;
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
@@ -160,11 +164,15 @@
 .promo__video-play:focus,
 .promo__video-play:hover {
   transform: translate(-50%, -50%) scale(1.2);
+
+  transition: transform 0.2s;
 }
 
 .promo__video-play:active {
   transform: translate(-50%, -50%) scale(0.8);
   opacity: 0.3;
+
+  transition: opacity, transform 0.2s;
 }
 
 .promo__buy {
