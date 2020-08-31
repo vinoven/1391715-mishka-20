@@ -27,10 +27,10 @@
 
   border: 1px solid $decor-light-gray;
 
+  transition: box-shadow 0.1s;
+
   &:hover {
     box-shadow: $dark-shadow;
-
-    transition: box-shadow 0.1s;
   }
 
   &:active {
@@ -179,18 +179,16 @@
 
   opacity: 0.2;
 
+  transition: opacity 0.4s;
+
   &:hover {
     color: $accent-light-mint;
 
     opacity: 1;
-
-    transition: opacity 0.4s;
   }
 
   &:active {
     opacity: 0.3;
-
-    transition: opacity 0.4s;
   }
 }
 

@@ -15,16 +15,14 @@
 }
 
 .page-footer__logo {
+  transition: color, opacity 0.2s;
+
   &:hover {
     color: $accent-dark-mint;
-
-    transition: color 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-
-    transition: opacity 0.2s;
   }
 
   @media (max-width: $mobile-only-width) {

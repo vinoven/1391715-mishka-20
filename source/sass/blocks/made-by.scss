@@ -19,10 +19,10 @@
 
   color: $accent-light-mint;
 
+  transition: color 0.2s;
+
   &:hover {
     color: $accent-dark-mint;
-
-    transition: color 0.2s;
   }
 
   &:active {

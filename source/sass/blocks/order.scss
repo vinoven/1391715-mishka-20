@@ -171,6 +171,8 @@
   border: 0;
   border-bottom: 2px solid $basic-black;
 
+  transition: border-color 0.2s;
+
   @media (min-width: $tablet-width) {
     padding: 18px;
 
@@ -181,8 +183,6 @@
   &:focus {
     border-bottom: 2px solid $accent-light-mint;
     outline: none;
-
-    transition: border-color 0.2s;
   }
 
   &--textarea {

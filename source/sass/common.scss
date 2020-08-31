@@ -66,6 +66,8 @@
   background-color: $basic-white;
   border: 2px solid $basic-dark-gray;
 
+  transition: color, background-color 0.1s;
+
   &--size-s {
     width: 175px;
   }
@@ -82,8 +84,6 @@
     color: $basic-white;
 
     background-color: $basic-dark-gray;
-
-    transition: color, background-color 0.1s;
   }
 
   &:active span {
