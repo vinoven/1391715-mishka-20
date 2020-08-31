@@ -13,3 +13,5 @@ source/css/*.map
 Thumbs.db
 source/pixel-glass
 csscomb.*
+academy-css-comb.json
+nodesource_setup.sh

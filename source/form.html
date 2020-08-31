@@ -256,14 +256,23 @@
         <fieldset class="order__fieldset container order__fieldset-list--type">
           <span class="order__fieldset-name">Тип</span>
           <ul class="order__fieldset-list list">
-            <li class="radio">
-              <input class="radio__button visually-hidden" type="radio" name="type" id="interrior" value="interrior" checked>
-              <label class="order__field-name order__custom-input radio__label" for="interrior">Аксессуар для интерьера</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="radio" name="type" id="interrior" value="interrior" checked>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--radio" for="interrior">Аксессуар для интерьера</label>
             </li>
-            <li class="radio">
-              <input class="radio__button visually-hidden" type="radio" name="type" id="toy" value="toy">
-              <label class="order__field-name order__custom-input radio__label" for="toy">Детская игрушка</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="radio" name="type" id="toy" value="toy">
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--radio" for="toy">Детская игрушка</label>
             </li>
+            <li class="custom-input">
+              <input class="visually-hidden" type="radio" name="type" id="a" value="a" disabled checked>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--radio" for="interrior">Аксессуар для интерьера</label>
+            </li>
+            <li class="custom-input">
+              <input class="visually-hidden" type="radio" name="type" id="b" value="b" disabled>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--radio" for="toy">Детская игрушка</label>
+            </li>
+
           </ul>
         </fieldset>
       </div>
@@ -272,29 +281,29 @@
         <fieldset class="order__fieldset container order__fieldset--color">
           <span class="order__fieldset-name">Цвет</span>
           <ul class="order__fieldset-list order__fieldset-list--color list">
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-white" value="white" checked>
-              <label class="order__field-name order__custom-input check__label" for="color-white">Белый</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-white" value="white" checked>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-white">Белый</label>
             </li>
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-gray" value="gray" checked>
-              <label class="order__field-name order__custom-input check__label" for="color-gray">Серый</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-gray" value="gray" checked>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-gray">Серый</label>
             </li>
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-tiffany" value="tiffany">
-              <label class="order__field-name order__custom-input check__label" for="color-tiffany">«Тиффани»</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-tiffany" value="tiffany">
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-tiffany">«Тиффани»</label>
             </li>
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-black" value="black">
-              <label class="order__field-name order__custom-input check__label" for="color-black">Черный</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-black" value="black">
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-black">Черный</label>
             </li>
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-pink" value="pink" checked disabled>
-              <label class="order__field-name order__custom-input check__label" for="color-pink">Розовый</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-pink" value="pink" checked disabled>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-pink">Розовый</label>
             </li>
-            <li class="check">
-              <input class="check__box visually-hidden" type="checkbox" name="color" id="color-orange" value="orange" disabled>
-              <label class="order__field-name order__custom-input check__label" for="color-orange">Оранжевый</label>
+            <li class="custom-input">
+              <input class="visually-hidden" type="checkbox" name="color" id="color-orange" value="orange" disabled>
+              <label class="order__field-name order__custom-input custom-input__label custom-input__label--check" for="color-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
