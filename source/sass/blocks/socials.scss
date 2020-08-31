@@ -18,7 +18,8 @@
 .socials__item-link {
   padding: 10px;
 
-  transition: color, opacity 0.2s;
+  transition: color, opacity;
+  transition-duration: 0.2s;
 
 
   &:hover .socials__item-icon {

@@ -12,7 +12,8 @@
     height: 40px;
     margin-right: 20px;
 
-    transition: box-shadow 0.15s;
+    transition-duration: 0.15s;
+    transition-property: box-shadow, border;
   }
 
   &--radio::before {
@@ -108,10 +109,10 @@ input[type="checkbox"]:checked:disabled + .custom-input__label--check::before {
   border: $normal-dark-gray;
 }
 
-.ustom-input:hover input[type="checkbox"]:not(:disabled) + .custom-input__label--check::before {
+.custom-input:hover input[type="checkbox"]:not(:disabled) + .custom-input__label--check::before {
   border: 2px solid $accent-light-mint;
 }
 
-.ustom-input:active input[type="checkbox"]:not(:disabled) + .custom-input__label--check::before {
+.custom-input:active input[type="checkbox"]:not(:disabled) + .custom-input__label--check::before {
   border: $normal-dark-gray;
 }

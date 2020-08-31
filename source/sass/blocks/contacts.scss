@@ -80,7 +80,8 @@
 
   border-bottom: 1px solid $accent-light-mint;
 
-  transition: color, border-color 0.2s;
+  transition: color, border-color;
+  transition-duration: 0.2s;
 
   &:hover {
     color: $accent-dark-mint;

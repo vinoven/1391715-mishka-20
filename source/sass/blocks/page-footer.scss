@@ -15,7 +15,8 @@
 }
 
 .page-footer__logo {
-  transition: color, opacity 0.2s;
+  transition: color, opacity;
+  transition-duration: 0.2s;
 
   &:hover {
     color: $accent-dark-mint;
