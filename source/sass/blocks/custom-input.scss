@@ -16,7 +16,7 @@
   &--radio::before {
     background-color: $basic-white;
     border-radius: 50%;
-    box-shadow: $radio-normal-cicle;
+    box-shadow: $radio-normal-circle;
 
     @media (min-width: $tablet-width) {
       margin-right: 25px;
@@ -56,11 +56,11 @@
 // Радиокнопки
 
 input[type="radio"] + .custom-input__label--radio::before {
-  box-shadow: $radio-normal-cicle;
+  box-shadow: $radio-normal-circle;
 }
 
 input[type="radio"]:focus-within + .custom-input__label--radio::before {
-  box-shadow: $radio-colored-cicle;
+  box-shadow: $radio-colored-circle;
 }
 
 input[type="radio"]:checked + .custom-input__label--radio::before {
@@ -68,22 +68,22 @@ input[type="radio"]:checked + .custom-input__label--radio::before {
 }
 
 input[type="radio"]:disabled + .custom-input__label--radio::before {
-  box-shadow: $radio-faded-cicle;
+  box-shadow: $radio-faded-circle;
 }
 
 input[type="radio"]:checked:disabled + .custom-input__label--radio::before {
   background-color: $basic-dark-gray-opacity-30;
-  box-shadow: $radio-faded-cicle;
+  box-shadow: $radio-faded-circle;
 }
 
 .custom-input:hover input[type="radio"]:not(:disabled) + .custom-input__label--radio::before {
-  box-shadow: $radio-colored-cicle;
+  box-shadow: $radio-colored-circle;
 
   transition: box-shadow 0.15s;
 }
 
 .custom-input:active input[type="radio"]:not(:disabled) + .custom-input__label--radio::before {
-  box-shadow: $radio-faded-cicle;
+  box-shadow: $radio-faded-circle;
 
   transition: box-shadow 0.15s;
 }
