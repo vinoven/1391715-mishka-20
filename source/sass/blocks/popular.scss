@@ -1,6 +1,45 @@
 .popular {
+  position: relative;
+
   padding-top: 30px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 6px;
+    margin-top: 35px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+
+      width: 1050px;
+      height: 23px;
+      margin-left: -525px;
+
+      background-position: center;
+    }
+  }
 }
 
 .popular__item {
@@ -10,23 +49,21 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas:
-      "title title title tag"
-      "description description picture picture"
-      "properties properties picture picture"
-      "price price picture picture"
-      "buy buy picture picture";
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "title title title title tag"
+      "description description gap picture picture"
+      "properties properties gap picture picture"
+      "price price gap picture picture"
+      "buy buy gap picture picture";
+    grid-template-columns: repeat(2, 146px) 42px repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas:
-      "tag title title picture picture picture"
-      ". description description picture picture picture"
-      ". properties properties picture picture picture"
-      ". price price picture picture picture"
-      ". buy buy picture picture picture";
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "tag title title . picture picture picture"
+      ". description description . picture picture picture"
+      ". properties properties . picture picture picture"
+      ". price price . picture picture picture"
+      ". buy buy . picture picture picture";
+    grid-template-columns: repeat(3, 155px) 60px repeat(3, 1fr);
   }
 }
 

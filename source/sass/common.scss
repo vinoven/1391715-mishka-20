@@ -29,6 +29,21 @@
   }
 }
 
+.inner-container {
+  padding-right: 34px;
+  padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 57px;
+    padding-left: 57px;
+  }
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -38,7 +53,7 @@
 
 .button {
   display: block;
-  width: 260px;
+  width: 100%;
   padding: 16px 0;
 
   font-weight: bold;
@@ -51,22 +66,29 @@
   background-color: $basic-white;
   border: 2px solid $basic-dark-gray;
 
+  &--size-s {
+    width: 175px;
+  }
+
+  &--size-m {
+    width: 230px;
+  }
+
+  &--size-l {
+    width: 292px;
+  }
+
   &:hover {
     color: $basic-white;
 
     background-color: $basic-dark-gray;
+
+    transition: color, background-color 0.1s;
   }
 
   &:active span {
     opacity: 0.3;
   }
-}
-
-.form-fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: 0;
 }
 
 .title {
@@ -96,5 +118,13 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+.modal {
+  position: fixed;
+
+  &--hidden {
+    display: none;
   }
 }

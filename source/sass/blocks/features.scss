@@ -1,6 +1,14 @@
 .features {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+  }
 }
 
 .features__title {
@@ -13,8 +21,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas:
-      "ecology handmade"
+    grid-template-areas: "ecology handmade"
       "style manufacturer"
       "likes gift";
     grid-template-columns: repeat(2, 1fr);
@@ -23,8 +30,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template-areas:
-      ". ecology handmade"
+    grid-template-areas: ". ecology handmade"
       ". style manufacturer"
       ". likes gift";
     grid-template-columns: 175px repeat(2, 350px);

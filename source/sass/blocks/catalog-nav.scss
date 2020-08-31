@@ -1,5 +1,22 @@
 .catalog-nav {
+  position: relative;
+
   background-color: $bg-light-gray;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+
+      width: 100%;
+      height: 35px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+    }
+  }
 }
 
 .catalog-nav__list {

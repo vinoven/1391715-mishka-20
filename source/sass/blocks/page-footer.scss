@@ -2,14 +2,6 @@
   align-items: center;
 
   background-color: $bg-light-gray;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 65px;
-  }
 }
 
 .page-footer__wrapper {
@@ -25,10 +17,14 @@
 .page-footer__logo {
   &:hover {
     color: $accent-dark-mint;
+
+    transition: color 0.2s;
   }
 
   &:active {
     opacity: 0.3;
+
+    transition: opacity 0.2s;
   }
 
   @media (max-width: $mobile-only-width) {
