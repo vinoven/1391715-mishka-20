@@ -18,10 +18,6 @@
 .socials__item-link {
   padding: 10px;
 
-  transition: color, opacity;
-  transition-duration: 0.2s;
-
-
   &:hover .socials__item-icon {
     color: $accent-dark-mint;
   }
@@ -33,4 +29,7 @@
 
 .socials__item-icon {
   color: $basic-black;
+
+  transition-duration: 0.2s;
+  transition-property: color, opacity;
 }

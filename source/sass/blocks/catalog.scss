@@ -179,7 +179,8 @@
 
   opacity: 0.2;
 
-  transition: opacity 0.4s;
+  transition-duration: 0.4s;
+  transition-property: opacity, color;
 
   &:hover {
     color: $accent-light-mint;
