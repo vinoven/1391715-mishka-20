@@ -9,6 +9,9 @@
   background-color: transparent;
   border: 1px solid $decor-light-gray;
 
+  transition: opacity 0.15s;
+
+
   @media (min-width: $tablet-width) {
     border: 0;
   }
@@ -17,8 +20,6 @@
 .controls__button-icon {
   &:hover {
     opacity: 0.6;
-
-    transition: opacity 0.15s;
   }
 
   &:active {

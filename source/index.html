@@ -484,6 +484,34 @@
       </section>
     </div>
   </footer>
+
+  <div class="add-to-cart modal modal--hidden">
+    <div class="add-to-cart__wrapper">
+      <h2 class="add-to-cart__title">Добавить в корзину</h2>
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="add-to-cart__options form-fieldset">
+          <legend class="add-to-cart__options-header plain-text">Выберите размер:</legend>
+          <ul class="add-to-cart__options-list list">
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-s" value="s" checked required>
+              <label class="add-to-cart__option-name" for="size-s">S</label>
+            </li>
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-m" value="m">
+              <label class="add-to-cart__option-name" for="size-m">M</label>
+            </li>
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-l" value="l">
+              <label class="add-to-cart__option-name" for="size-l">L</label>
+            </li>
+          </ul>
+
+        </fieldset>
+        <button class="add-to-cart__option-submit button" type="submit"><span>Добавить</span></button>
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>

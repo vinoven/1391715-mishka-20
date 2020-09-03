@@ -112,16 +112,14 @@
 
   border: 2px solid $basic-dark-gray-opacity-10;
 
+  transition: border-color 0.3s;
+
   &:hover {
     border-color: $basic-dark-gray-opacity-30;
-
-    transition: border-color 0.3s;
   }
 
   &:active {
     border-color: $accent-light-mint;
-
-    transition: border-color 0.1s;
   }
 
   @media (min-width: $tablet-width) {
