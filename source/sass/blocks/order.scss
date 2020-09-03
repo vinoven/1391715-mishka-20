@@ -68,7 +68,7 @@
 }
 
 .order__fieldset-inner-container {
-  align-items: baseline;
+  align-items: start;
   padding: 0;
 }
 
@@ -123,6 +123,7 @@
   line-height: 16px;
   color: $accent-light-mint;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     align-items: stretch;
