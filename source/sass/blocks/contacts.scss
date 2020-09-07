@@ -102,8 +102,16 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -115,6 +123,10 @@
 
     grid-column: 4 / -1;
     grid-row: 1 / 4;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }
 
