@@ -49,7 +49,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas: "title title title title tag"
+    grid-template-areas:
+      "title title title title tag"
       "description description gap picture picture"
       "properties properties gap picture picture"
       "price price gap picture picture"
@@ -58,7 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: "tag title title . picture picture picture"
+    grid-template-areas:
+      "tag title title . picture picture picture"
       ". description description . picture picture picture"
       ". properties properties . picture picture picture"
       ". price price . picture picture picture"
@@ -158,7 +160,8 @@
   padding: 12px 0;
 }
 
-.popular__item-picture {
+.popular__item-picture,
+.popular__item picture {
   width: 260px;
   height: 315px;
 
