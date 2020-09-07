@@ -131,14 +131,30 @@
   height: 150px;
 
   object-fit: cover;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 682px;
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
 
