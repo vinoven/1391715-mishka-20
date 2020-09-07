@@ -121,21 +121,21 @@
 
   transition: color 0.2s;
 
-  &:hover {
+  &[href]:hover {
     color: $basic-black-opacity-60;
   }
 
-  &:active {
+  &[href]:active {
     color: $basic-black-opacity-30;
   }
 
-  &:hover .main-nav__item-link-icon {
+  &[href]:hover .main-nav__item-link-icon {
     color: $accent-light-mint;
 
     opacity: 1;
   }
 
-  &:active .main-nav__item-link-icon {
+  &[href]:active .main-nav__item-link-icon {
     opacity: 0.3;
   }
 
