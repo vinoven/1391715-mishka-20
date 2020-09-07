@@ -82,7 +82,7 @@
 }
 
 .main-nav__list--primary li {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 35px;
   }
 }
