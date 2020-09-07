@@ -254,9 +254,11 @@
 
       <div class="main-nav__logo-container">
         <a class="main-nav__logo logo">
-          <svg class="main-nav__logo-pic" width="86" height="36" aria-label="Логотип Интернет-магазина Мишка">
-            <use xlink:href="#logo-header"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img lass="main-nav__logo-pic" src="img/logo-mobile.svg" alt="Логотип Интернет-магазина Мишка" width="86" height="36">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"></button>
       </div>
@@ -342,7 +344,10 @@
           </tr>
         </table>
 
-        <img class="popular__item-picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/">
+        	<img class="popular__item-picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        </picture>
         <span class="popular__item-price">Цена: 990 руб.</span>
         <a class="popular__item-buy button" href="blank.html"><span>Заказать</span></a>
       </div>
