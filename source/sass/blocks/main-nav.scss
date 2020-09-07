@@ -11,6 +11,7 @@
 
 .main-nav__logo-container {
   padding: 20px 0;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -23,11 +24,16 @@
   }
 }
 
+.main-nav__logo {
+  @media (max-width: $mobile-only-width) {
+    margin: 0 auto;
+  }
+}
+
 .main-nav__logo[href] {
   color: $basic-black;
 
   transition: opacity 0.2s;
-
 
   &:hover {
     opacity: 0.6;
