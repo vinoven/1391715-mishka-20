@@ -1,0 +1,19 @@
+{
+  "lang": "ru",
+  "dir": "ltr",
+  "name": "Интернет-магазин Мишка",
+  "description": "Интернет-магазин товаров ручной работы Мишка",
+  "short_name": "Мишка",
+  "icons": [
+    {
+      "src": "img/favicon.svg",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "white",
+  "background_color": "white",
+  "purpose": "maskable"
+}
