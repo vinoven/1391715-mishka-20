@@ -54,6 +54,8 @@
   background-color: transparent;
   border: 0;
   right: 0;
+  padding: 16px;
+  margin-right: -4px;
 
   &:hover {
     opacity: 0.6;
@@ -74,8 +76,8 @@
 
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
-  left: 0;
-  top: 3px;
+  right: 5px;
+  top: 8px;
   content: "";
   width: 20px;
   height: 2px;
@@ -86,7 +88,8 @@
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
-    left: 0;
+    right: 4px;
+    top: 14px;
     content: "";
     position: absolute;
     width: 21px;
@@ -163,11 +166,20 @@
 }
 
 .main-nav__list--secondary li:not(:last-child) {
-  margin-right: 30px;
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .main-nav__item {
-  border-top: 1px solid $decor-light-gray;
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid $decor-light-gray;
+    margin: 0 calc(50% - 50vw);
+
+    &:last-child {
+      border-bottom: 1px solid $decor-light-gray;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -185,6 +197,11 @@
   color: $basic-black;
 
   transition: color 0.2s;
+
+  @media (max-width: $mobile-only-width) {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &[href]:hover {
     color: $basic-black-opacity-60;
