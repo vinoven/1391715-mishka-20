@@ -25,12 +25,22 @@
     background-repeat: no-repeat;
     background-position: center -20px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+    }
+
     @media (min-width: $tablet-width) {
       height: 625px;
       padding-top: 155px;
 
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center -2px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 1150px auto;
+      }
 
       & br {
         display: none;
@@ -39,6 +49,10 @@
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
     }
   }
 }

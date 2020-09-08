@@ -7,16 +7,14 @@
 
   border: 1px solid $decor-light-gray;
 
+  transition: box-shadow 0.1s;
+
   &:hover {
     box-shadow: $dark-shadow;
-
-    transition: box-shadow 0.1s;
   }
 
   &:active {
     box-shadow: 0 3px 5px $basic-black-opacity-10;
-
-    transition: box-shadow 0.1s;
   }
 
   @media (min-width: $tablet-width) {
@@ -133,14 +131,30 @@
   height: 150px;
 
   object-fit: cover;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 682px;
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }
 
@@ -159,20 +173,19 @@
   background-position: center;
   border: 0;
   transform: translate(-50%, -50%);
+
+  transition-duration: 0.2s;
+  transition-property: transform, opacity;
 }
 
 .promo__video-play:focus,
 .promo__video-play:hover {
   transform: translate(-50%, -50%) scale(1.2);
-
-  transition: transform 0.2s;
 }
 
 .promo__video-play:active {
   transform: translate(-50%, -50%) scale(0.8);
   opacity: 0.3;
-
-  transition: opacity, transform 0.2s;
 }
 
 .promo__buy {

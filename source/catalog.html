@@ -4,6 +4,7 @@
 <head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог товаров - Интернет-магазин товаров ручной работы "Мишка"</title>
 
@@ -250,19 +251,21 @@
   </svg>
 
   <header class="page-header container">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--no-js main-nav--closed">
 
       <div class="main-nav__logo-container">
         <a class="main-nav__logo logo" href="index.html">
-          <svg class="main-nav__logo-pic" width="86" height="36" aria-label="Логотип Интернет-магазина Мишка">
-            <use xlink:href="#logo-header"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img lass="main-nav__logo-pic" src="img/logo-mobile.svg" alt="Логотип Интернет-магазина Мишка" width="86" height="36">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"></button>
       </div>
 
       <ul class="main-nav__list main-nav__list--primary list">
-        <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__item-link">Каталог товаров</a></li>
         <li class="main-nav__item"><a href="form.html" class="main-nav__item-link">Вязание на заказ</a></li>
       </ul>
 
@@ -300,8 +303,13 @@
       <ul class="catalog__list list">
         <li class="catalog__item">
           <a class="catalog__item-link" href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195"
-              alt="Изображение вязаного игрушечного зайца">
+
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195"
+                alt="Изображение вязаного игрушечного зайца">
+            </picture>
           </a>
 
           <div class="catalog__item-description">
@@ -320,8 +328,12 @@
         </li>
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="./img/photo-bowl-mobile@1x.jpg" width="260" height="195"
-              alt="Изображение вязаной корзинки для белья в белом и коралловом цветах">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195"
+                alt="Изображение вязаной корзинки для белья в белом и коралловом цветах">
+            </picture>
           </a>
 
           <div class="catalog__item-description">
@@ -340,8 +352,12 @@
         </li>
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
-            <img class="catalog__item-picture" src="./img/photo-toys-mobile@1x.jpg" width="260" height="195"
-              alt="Изображение вязаной корзинки для игрушек в белом и салатовом цветах">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195"
+                alt="Изображение вязаной корзинки для игрушек в белом и салатовом цветах">
+            </picture>
           </a>
 
           <div class="catalog__item-description">
@@ -369,7 +385,7 @@
           <h2 class="promo__title">Процесс производства</h2>
         </header>
         <div class="promo__media">
-          <video class="promo__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
+          <video class="promo__video" width="260" height="150">
             <source src="video.mp4" type="video/mp4">
           </video>
           <button class="promo__video-play" type="button"><span class="visually-hidden">Смотреть видео</span></button>
@@ -453,6 +469,9 @@
       </form>
     </div>
   </div>
+
+  <script src="js/menu-toggle.js"></script>
+
 
 </body>
 

@@ -11,6 +11,9 @@
 
 .main-nav__logo-container {
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -23,22 +26,85 @@
   }
 }
 
+.main-nav__logo {
+  @media (max-width: $mobile-only-width) {
+    margin: 0 auto;
+  }
+}
+
 .main-nav__logo[href] {
   color: $basic-black;
 
+  transition: opacity 0.2s;
+
   &:hover {
     opacity: 0.6;
-    transition: opacity 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: opacity 0.2s;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  right: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $mobile-only-width) {
     display: none;
   }
 }
@@ -81,7 +147,7 @@
 }
 
 .main-nav__list--primary li {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 35px;
   }
 }
@@ -118,25 +184,24 @@
   line-height: 24px;
   color: $basic-black;
 
-  &:hover {
+  transition: color 0.2s;
+
+  &[href]:hover {
     color: $basic-black-opacity-60;
-    transition: color 0.2s;
   }
 
-  &:active {
+  &[href]:active {
     color: $basic-black-opacity-30;
-    transition: color 0.2s;
   }
 
-  &:hover .main-nav__item-link-icon {
+  &[href]:hover .main-nav__item-link-icon {
     color: $accent-light-mint;
+
     opacity: 1;
-    transition: opacity 0.2s;
   }
 
-  &:active .main-nav__item-link-icon {
+  &[href]:active .main-nav__item-link-icon {
     opacity: 0.3;
-    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {
@@ -175,7 +240,7 @@
   opacity: 0.2;
 
   &--search {
-    top: calc(50% - 8px);
+    top: calc(50% - 10px);
     left: 2px;
 
     @media (min-width: $tablet-width) {

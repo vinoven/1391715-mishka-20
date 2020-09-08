@@ -20,17 +20,16 @@
 
   &:hover .socials__item-icon {
     color: $accent-dark-mint;
-
-    transition: color 0.2s;
   }
 
   &:active .socials__item-icon {
     opacity: 0.3;
-
-    transition: oapcity 0.2s;
   }
 }
 
 .socials__item-icon {
   color: $basic-black;
+
+  transition-duration: 0.2s;
+  transition-property: color, opacity;
 }

@@ -4,6 +4,7 @@
 <head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <title>Интернет-магазин товаров ручной работы "Мишка"</title>
 
@@ -250,13 +251,15 @@
 
 
   <header class="page-header container">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--no-js main-nav--closed">
 
       <div class="main-nav__logo-container">
         <a class="main-nav__logo logo">
-          <svg class="main-nav__logo-pic" width="86" height="36" aria-label="Логотип Интернет-магазина Мишка">
-            <use xlink:href="#logo-header"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img lass="main-nav__logo-pic" src="img/logo-mobile.svg" alt="Логотип Интернет-магазина Мишка" width="86" height="36">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"></button>
       </div>
@@ -342,7 +345,13 @@
           </tr>
         </table>
 
-        <img class="popular__item-picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+          <img class="popular__item-picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315"
+            alt="Вязаные корзинки">
+        </picture>
+
         <span class="popular__item-price">Цена: 990 руб.</span>
         <a class="popular__item-buy button" href="blank.html"><span>Заказать</span></a>
       </div>
@@ -484,6 +493,36 @@
       </section>
     </div>
   </footer>
+
+  <div class="add-to-cart modal modal--hidden">
+    <div class="add-to-cart__wrapper">
+      <h2 class="add-to-cart__title">Добавить в корзину</h2>
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="add-to-cart__options form-fieldset">
+          <legend class="add-to-cart__options-header plain-text">Выберите размер:</legend>
+          <ul class="add-to-cart__options-list list">
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-s" value="s" checked required>
+              <label class="add-to-cart__option-name" for="size-s">S</label>
+            </li>
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-m" value="m">
+              <label class="add-to-cart__option-name" for="size-m">M</label>
+            </li>
+            <li class="add-to-cart__options-item">
+              <input type="radio" name="size" id="size-l" value="l">
+              <label class="add-to-cart__option-name" for="size-l">L</label>
+            </li>
+          </ul>
+
+        </fieldset>
+        <button class="add-to-cart__option-submit button" type="submit"><span>Добавить</span></button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/menu-toggle.js"></script>
+
 </body>
 
 </html>
