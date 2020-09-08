@@ -166,11 +166,20 @@
 }
 
 .main-nav__list--secondary li:not(:last-child) {
-  margin-right: 30px;
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .main-nav__item {
-  border-top: 1px solid $decor-light-gray;
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid $decor-light-gray;
+    margin: 0 calc(50% - 50vw);
+
+    &:last-child {
+      border-bottom: 1px solid $decor-light-gray;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -188,6 +197,11 @@
   color: $basic-black;
 
   transition: color 0.2s;
+
+  @media (max-width: $mobile-only-width) {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   &[href]:hover {
     color: $basic-black-opacity-60;
