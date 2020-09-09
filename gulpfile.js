@@ -10,6 +10,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+// const del = require("del");
 
 // Styles
 
@@ -22,7 +23,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
 
@@ -65,12 +66,45 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Copy
+
+const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+
+exports.copy = copy;
+
+// Del
+
+// const clean = () => {
+//   return del("build");
+// };
+
+// exports.clean = clean;
+
+// Build
+
+const build = gulp.series(
+  // clean,
+  copy,
+  styles,
+  sprite
+);
+
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source",
+      baseDir: "build",
     },
     cors: true,
     notify: false,
@@ -89,3 +123,15 @@ const watcher = () => {
 };
 
 exports.default = gulp.series(styles, server, watcher);
+
+
+// TODO
+
+// 1. Установить del
+// 2. Разобраться с imagemin
+// 3. Проверить сборку спрайта в build
+// 4. Перенос HTML в build
+// 5. Перенос изображений в build
+// 6. Пути background-image в build
+// 7. Изменить путь к файлу стилей на build в html
+// 8. Поправить таск build
