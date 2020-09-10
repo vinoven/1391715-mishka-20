@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -28,6 +29,17 @@ const styles = () => {
 };
 
 exports.styles = styles;
+
+//HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+};
+
+exports.html = html;
+
 
 // Images
 
@@ -111,7 +123,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series(html, sync.reload));
 };
 
 exports.default = gulp.series(styles, server, watcher);
@@ -128,7 +140,6 @@ const build = gulp.series(
 
 exports.build = build;
 
-
 // Start
 
 const start = gulp.series(
@@ -138,16 +149,3 @@ const start = gulp.series(
 );
 
 exports.start = start;
-
-// TODO
-
-// 1. Установить del +++++
-// 2. Разобраться с imagemin ++++++
-// 3. Проверить сборку спрайта в build +++++
-// 4. Перенос HTML в build ++++
-// 5. Перенос изображений в build +++++
-// 6. Пути background-image в build
-// 7. Изменить путь к файлу стилей на build в html +++
-// 8. Поправить таск build ++++
-// 9. Изменить use для svg в html, т.к. поменяются id
-// 10. Првоерить client dependencies

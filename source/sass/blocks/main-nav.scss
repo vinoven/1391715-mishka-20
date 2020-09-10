@@ -163,6 +163,12 @@
   @media (min-width: $desktop-width) {
     order: 3;
   }
+
+  @media (max-width: $mobile-only-width) {
+    & li:last-child {
+      border-bottom: 1px solid $decor-light-gray;
+    }
+  }
 }
 
 .main-nav__list--secondary li:not(:last-child) {
@@ -175,10 +181,6 @@
   @media (max-width: $mobile-only-width) {
     border-top: 1px solid $decor-light-gray;
     margin: 0 calc(50% - 50vw);
-
-    &:last-child {
-      border-bottom: 1px solid $decor-light-gray;
-    }
   }
 
   @media (min-width: $tablet-width) {

@@ -7,8 +7,10 @@
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.10",
     "del": "^5.1.0",
+    "editorconfig-cli": "^0.3.0",
     "gulp": "4.0.2",
     "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
@@ -43,8 +45,5 @@
   ],
   "engines": {
     "node": "12.18.2"
-  },
-  "dependencies": {
-    "editorconfig-cli": "^0.3.0"
   }
 }
