@@ -8,10 +8,9 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
 Thumbs.db
 source/pixel-glass
 csscomb.*
 academy-css-comb.json
 nodesource_setup.sh
+build/
