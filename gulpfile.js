@@ -21,6 +21,9 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -50,7 +53,8 @@ const images = () => {
         imagemin.mozjpeg({ quality: 85, progressive: true }),
         imagemin.svgo()
       ])
-    );
+    )
+    .pipe(gulp.dest("build/img"))
 };
 
 exports.images = images;
@@ -67,7 +71,7 @@ const generateWebp = () => {
 exports.generateWebp = generateWebp;
 
 
-// SVG
+// Sprite
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
@@ -86,7 +90,6 @@ const copy = () => {
     "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -95,7 +98,7 @@ const copy = () => {
 
 exports.copy = copy;
 
-// Del
+// Clean
 
 const clean = () => {
   return del("build");
@@ -131,11 +134,13 @@ exports.default = gulp.series(styles, server, watcher);
 // Build
 
 const build = gulp.series(
-  generateWebp,
   clean,
+  generateWebp,
   copy,
+  images,
+  sprite,
   styles,
-  sprite
+  html
 );
 
 exports.build = build;
