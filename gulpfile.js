@@ -55,7 +55,7 @@ const images = () => {
         imagemin.svgo()
       ])
     )
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 };
 
 exports.images = images;
@@ -149,8 +149,8 @@ exports.default = gulp.series(styles, server, watcher);
 const build = gulp.series(
   clean,
   generateWebp,
-  copy,
   images,
+  copy,
   sprite,
   styles,
   html,
