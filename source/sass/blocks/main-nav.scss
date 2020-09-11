@@ -74,6 +74,10 @@
   display: none;
 }
 
+.main-nav--no-js .main-nav__list:not(.main-nav__list--extra) {
+  display: block;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   right: 5px;
