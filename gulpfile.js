@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -82,6 +83,18 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+//JS
+
+const js = () => {
+  return gulp.src("source/js/scripts.js")
+  .pipe(uglify())
+  .pipe(rename("scripts.min.js"))
+  .pipe(gulp.dest("build/js"))
+}
+
+exports.js = js;
+
+
 // Copy
 
 const copy = () => {
@@ -140,7 +153,8 @@ const build = gulp.series(
   images,
   sprite,
   styles,
-  html
+  html,
+  js
 );
 
 exports.build = build;
