@@ -3,7 +3,7 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 78px;
+    padding-top: 75px;
     padding-bottom: 52px;
   }
 
@@ -67,7 +67,7 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,6 +183,10 @@
 
   transition-duration: 0.4s;
   transition-property: opacity, color;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
+  }
 
   &:hover {
     color: $accent-light-mint;
