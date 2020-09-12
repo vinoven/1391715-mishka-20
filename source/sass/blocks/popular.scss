@@ -5,7 +5,6 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
     padding-top: 52px;
     padding-bottom: 69px;
   }
@@ -64,7 +63,7 @@
     ". properties properties . picture picture picture"
     ". price price . picture picture picture"
     ". buy buy . picture picture picture";
-    grid-template-columns: repeat(3, 155px) 60px repeat(3, 1fr);
+    grid-template-columns: 175px 145px 145px 60px repeat(3,1fr);
   }
 }
 
@@ -80,7 +79,7 @@
   @media (min-width: $desktop-width) {
     z-index: 1;
 
-    margin-top: 60px;
+    margin-top: 80px;
     margin-right: -100%;
     margin-bottom: 0;
   }
@@ -103,7 +102,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 60px;
+    margin-top: 78px;
+    margin-left: -10px;
+    padding: 5px 30px;
     padding-top: 10px;
 
     justify-self: center;
@@ -129,7 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 38px;
+    margin-top: 34px;
     margin-bottom: 60px;
   }
 }
@@ -152,6 +153,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -10px;
     margin-bottom: 110px;
   }
 }

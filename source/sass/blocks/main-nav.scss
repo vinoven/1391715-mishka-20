@@ -7,6 +7,10 @@
     justify-content: space-between;
     padding-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 3px;
+  }
 }
 
 .main-nav__logo-container {
@@ -20,11 +24,13 @@
     order: 1;
     width: 320px;
     padding: 17px 0;
+    // padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
     width: 150px;
+    padding-bottom: 0;
   }
 }
 
@@ -52,6 +58,12 @@
   @media (min-width: $tablet-width) {
     width: 114px;
     margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    margin-top: -13px;
+    margin-left: -31px;
   }
 }
 
@@ -150,6 +162,10 @@
   }
 }
 
+.main-nav__list--extra .main-nav__item-link {
+  padding-top: 20px;
+}
+
 .main-nav__list--primary {
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -174,7 +190,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -6px;
+    margin-top: 0;
     padding-left: 35px;
   }
 }
@@ -289,6 +305,11 @@
 
     @media (min-width: $tablet-width) {
       left: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: calc(50% - 9px);
+      left: 31 px;
     }
   }
 

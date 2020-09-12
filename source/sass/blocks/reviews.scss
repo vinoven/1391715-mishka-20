@@ -16,6 +16,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 75px;
+    padding-bottom: 95px;
+
     background-position: 50px center;
   }
 }
@@ -73,5 +76,12 @@
     margin: 0;
 
     grid-column: -1 / -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 53px;
+    margin-top: 4px;
+
+    justify-self: end;
   }
 }
