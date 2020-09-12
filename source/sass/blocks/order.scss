@@ -1,5 +1,5 @@
 .order {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -61,6 +61,21 @@
   }
 }
 
+.order__fieldset {
+  &--type {
+    margin-bottom: 2px;
+  }
+
+  &--phone {
+    padding-top: 36px;
+  }
+
+
+  &--comment {
+    padding-top: 35px;
+  }
+}
+
 .order__fieldset-wrapper:nth-child(odd) {
   @media (min-width: $tablet-width) {
     background-color: $decor-light-gray;
@@ -73,7 +88,7 @@
 }
 
 .order__fieldset-inner-container:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .order__fieldset-list {
@@ -90,7 +105,7 @@
   }
 
   &--type li:not(:last-child) {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 24px;
@@ -117,13 +132,28 @@
 .order__fieldset-name {
   display: flex;
   align-items: center;
-  margin: 0 0 25px;
+  margin: 0 0 30px;
 
   font-weight: bold;
   line-height: 16px;
   color: $accent-light-mint;
   text-transform: uppercase;
 
+  &--color {
+    margin-bottom: 27px;
+  }
+
+  &--phone {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 0;
+  }
+
+  &--comment {
+    margin-bottom: 22px;
+  }
 
   @media (min-width: $tablet-width) {
     align-items: stretch;
@@ -160,9 +190,9 @@
 
 .order__field-user-input {
   width: 100%;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-right: 40px;
-  padding-bottom: 17px;
+  padding-bottom: 8px;
   padding-left: 0;
 
   font-size: 17px;
@@ -173,6 +203,14 @@
   border-bottom: 2px solid $basic-black;
 
   transition: border-color 0.2s;
+
+  &--phone {
+    padding-bottom: 14px;
+  }
+
+  &--email {
+    padding-bottom: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 18px;
@@ -244,7 +282,7 @@
 .order__footer-text {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
+  margin-left: 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -252,11 +290,12 @@
 
   @media (max-width: $mobile-only-width) {
     margin-top: 17px;
+    margin-left: auto;
   }
 }
 
 .order__submit {
-  margin: 30px 0;
+  margin: 28px 0;
 
   @media (min-width: $tablet-width) {
     width: 230px;

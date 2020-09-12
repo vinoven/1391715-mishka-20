@@ -97,7 +97,7 @@
         детали.
       </p>
       <div class="order__fieldset-wrapper">
-        <fieldset class="order__fieldset container">
+        <fieldset class="order__fieldset container order__fieldset--type">
           <div class="order__fieldset-inner-container">
             <span class="order__fieldset-name">Тип</span>
             <ul class="order__fieldset-list order__fieldset-list--type list">
@@ -118,7 +118,7 @@
       <div class="order__fieldset-wrapper">
         <fieldset class="order__fieldset container order__fieldset--color">
           <div class="order__fieldset-inner-container">
-            <span class="order__fieldset-name">Цвет</span>
+            <span class="order__fieldset-name order__fieldset-name--color">Цвет</span>
             <ul class="order__fieldset-list order__fieldset-list--color list">
               <li class="custom-input">
                 <input class="visually-hidden" type="checkbox" name="color" id="color-white" value="white" checked>
@@ -174,11 +174,11 @@
       </div>
 
       <div class="order__fieldset-wrapper">
-        <fieldset class="order__fieldset container">
+        <fieldset class="order__fieldset order__fieldset--phone container">
           <div class="order__fieldset-inner-container">
-            <span class="order__fieldset-name">Тел</span>
+            <span class="order__fieldset-name order__fieldset-name--phone">Тел</span>
             <label for="phone-number">
-              <input class="order__field-user-input" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              <input class="order__field-user-input order__field-user-input--phone" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                 aria-label="Поле для ввода номера телефона" required>
               <svg class="order__contacts-icon order__contacts-icon--phone" width="25" height="25">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -186,9 +186,9 @@
             </label>
           </div>
           <div class="order__fieldset-inner-container">
-            <span class="order__fieldset-name">e-mail</span>
+            <span class="order__fieldset-name order__fieldset-name--email">e-mail</span>
             <label for="e-mail">
-              <input class="order__field-user-input" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*"
+              <input class="order__field-user-input order__field-user-input--email" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*"
                 aria-label="Поле для ввода адреса электронной почты" required>
               <svg class="order__contacts-icon order__contacts-icon--mail" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -199,9 +199,9 @@
       </div>
 
       <div class="order__fieldset-wrapper">
-        <fieldset class="order__fieldset container">
+        <fieldset class="order__fieldset order__fieldset--comment container">
           <div class="order__fieldset-inner-container">
-            <span class="order__fieldset-name">Доп</span>
+            <span class="order__fieldset-name order__fieldset-name--comment">Доп</span>
             <label for="comment">
               <textarea class="order__field-user-input order__field-user-input--textarea" name="comment" id="comment"
                 placeholder="Опишите все ваши пожелания к заказу" aria-label="Поле для ввода комментария к заказу"></textarea>
