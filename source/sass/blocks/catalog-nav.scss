@@ -48,8 +48,8 @@
   color: $basic-white;
 
   &:hover {
-    margin-top: -5px;
     min-height: 108px;
+    margin-top: -5px;
   }
 
   @media (max-width: $mobile-only-width) {
@@ -77,6 +77,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: -8px;
   margin-left: 30px;
 
   color: inherit;
@@ -103,6 +104,7 @@
 }
 
 .catalog-nav__item-pic {
+  margin-top: 10px;
   margin-left: auto;
 
   color: $accent-darker-mint;

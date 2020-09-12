@@ -1,5 +1,5 @@
 .features {
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -22,8 +22,8 @@
     display: grid;
 
     grid-template-areas: "ecology handmade"
-      "style manufacturer"
-      "likes gift";
+    "style manufacturer"
+    "likes gift";
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -31,8 +31,8 @@
     display: grid;
 
     grid-template-areas: ". ecology handmade"
-      ". style manufacturer"
-      ". likes gift";
+    ". style manufacturer"
+    ". likes gift";
     grid-template-columns: 175px repeat(2, 350px);
   }
 }
@@ -40,7 +40,7 @@
 .features__item {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 26px;
 
   font-weight: bold;
 
@@ -53,29 +53,62 @@
     grid-area: ecology;
   }
 
+  &--ecology .features__item-icon {
+    margin-left: 8px;
+  }
+
   &--style {
     grid-area: style;
+  }
+
+  &--style .features__item-icon {
+    margin-top: 2px;
+    margin-bottom: 27px;
   }
 
   &--likes {
     grid-area: likes;
   }
 
+  &--likes .features__item-icon {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 6px;
+  }
+
   &--handmade {
     grid-area: handmade;
+  }
+
+  &--handmade .features__item-icon {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 4px;
   }
 
   &--manufacturer {
     grid-area: manufacturer;
   }
 
+  &--manufacturer .features__item-icon {
+    margin-top: 7px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+  }
+
   &--gift {
     grid-area: gift;
+  }
+
+  &--gift .features__item-icon {
+    margin-top: 6px;
+    margin-bottom: 19px;
+    margin-left: 3px;
   }
 }
 
 .features__item-icon {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
   color: $accent-light-mint;
 }

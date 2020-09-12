@@ -1,9 +1,9 @@
 .contacts {
   display: grid;
-  padding-top: 38px;
+  padding-top: 42px;
   padding-bottom: 38px;
 
-  row-gap: 40px;
+  row-gap: 35px;
 
   @media (min-width: $tablet-width) {
     row-gap: 50px;
@@ -21,7 +21,7 @@
 .contacts__info {
   display: grid;
 
-  row-gap: 32px;
+  row-gap: 28px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -145,7 +145,10 @@
 }
 
 .contacts__write-btn {
-  margin: 0 auto;
+  margin-top: 3px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 230px;

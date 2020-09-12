@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-top: -10px;
@@ -49,27 +49,27 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    grid-template-areas:
-      "title title title title tag"
-      "description description gap picture picture"
-      "properties properties gap picture picture"
-      "price price gap picture picture"
-      "buy buy gap picture picture";
+    grid-template-areas: "title title title title tag"
+    "description description gap picture picture"
+    "properties properties gap picture picture"
+    "price price gap picture picture"
+    "buy buy gap picture picture";
     grid-template-columns: repeat(2, 146px) 42px repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-areas:
-      "tag title title . picture picture picture"
-      ". description description . picture picture picture"
-      ". properties properties . picture picture picture"
-      ". price price . picture picture picture"
-      ". buy buy . picture picture picture";
+    grid-template-areas: "tag title title . picture picture picture"
+    ". description description . picture picture picture"
+    ". properties properties . picture picture picture"
+    ". price price . picture picture picture"
+    ". buy buy . picture picture picture";
     grid-template-columns: repeat(3, 155px) 60px repeat(3, 1fr);
   }
 }
 
 .popular__item-title {
+  margin-bottom: 5px;
+
   grid-area: title;
 
   @media (min-width: $tablet-width) {
@@ -111,7 +111,7 @@
 
 .popular__item-description {
   margin-top: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 
   font-size: 15px;
   line-height: 24px;
@@ -155,9 +155,13 @@
   border-bottom: 1px solid $decor-light-gray;
 }
 
+.popular__item-property {
+  width: 98px;
+}
+
 .popular__item-property-value {
   margin: 0;
-  padding: 12px 0;
+  padding: 10.4px 0;
 }
 
 .popular__item-picture,
@@ -185,7 +189,7 @@
 
 .popular__item-price {
   align-self: center;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   font-weight: bold;
   line-height: 24px;

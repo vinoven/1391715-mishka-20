@@ -10,10 +10,11 @@
 }
 
 .main-nav__logo-container {
-  padding: 20px 0;
+  position: relative;
+
   display: flex;
   align-items: center;
-  position: relative;
+  padding: 21px 0;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -48,14 +49,16 @@
 
 .main-nav__toggle {
   position: absolute;
+  right: 0;
+
   width: 20px;
   height: 20px;
-  cursor: pointer;
+  margin-right: -4px;
+  padding: 16px;
+
   background-color: transparent;
   border: 0;
-  right: 0;
-  padding: 16px;
-  margin-right: -4px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -79,12 +82,14 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  position: absolute;
-  right: 5px;
-  top: 8px;
   content: "";
+  position: absolute;
+  top: 8px;
+  right: 5px;
+
   width: 20px;
   height: 2px;
+
   background-color: $basic-black;
   box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
 }
@@ -92,12 +97,14 @@
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
-    right: 4px;
-    top: 14px;
     content: "";
     position: absolute;
+    top: 14px;
+    right: 4px;
+
     width: 21px;
     height: 2px;
+
     background-color: $basic-black;
   }
 
@@ -183,8 +190,9 @@
 
 .main-nav__item {
   @media (max-width: $mobile-only-width) {
-    border-top: 1px solid $decor-light-gray;
     margin: 0 calc(50% - 50vw);
+
+    border-top: 1px solid $decor-light-gray;
   }
 
   @media (min-width: $tablet-width) {
