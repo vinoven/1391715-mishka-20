@@ -6,7 +6,10 @@
   row-gap: 35px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 50px;
+    padding-top: 143px;
+    padding-bottom: 58px;
+
+    row-gap: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +49,10 @@
   align-items: center;
 
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -9px;
+  }
 }
 
 .contacts__title {
@@ -58,6 +65,12 @@
   @media (max-width: $mobile-only-width) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+    margin-right: 3px;;
+  }
+
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -138,6 +151,11 @@
 }
 
 .contacts__write {
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
+
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
     grid-row: 3 / 4;

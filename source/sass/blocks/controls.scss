@@ -13,10 +13,12 @@
 
 
   @media (min-width: $tablet-width) {
+    padding: 19px;
+
     border: 0;
   }
 }
-
+controls__button
 .controls__button-icon {
   &:hover {
     opacity: 0.6;

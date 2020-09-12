@@ -12,6 +12,10 @@
 }
 
 .features__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 175px;
   }
@@ -45,6 +49,9 @@
   font-weight: bold;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 54px;
+
     font-size: 20px;
     line-height: 22px;
   }

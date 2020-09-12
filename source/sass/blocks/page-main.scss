@@ -31,11 +31,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      height: 625px;
+      height: 627px;
       padding-top: 155px;
 
       background-image: url("../img/hero-tablet@1x.jpg");
-      background-position: center -2px;
+      background-position: center 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hero-tablet@2x.jpg");

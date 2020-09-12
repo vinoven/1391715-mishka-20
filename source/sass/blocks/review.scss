@@ -29,6 +29,10 @@
   font-style: normal;
   font-weight: bold;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .review__username {
