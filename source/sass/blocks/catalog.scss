@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 116px;
+    padding-bottom: 57px;
   }
 }
 
@@ -85,12 +86,15 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding-top: 25px;
     padding-right: 60px;
+    padding-bottom: 23px;
     padding-left: 33px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 23px;
     padding-right: 50px;
     padding-left: 26px;
   }
