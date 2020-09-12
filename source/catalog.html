@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 
-<head >
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
@@ -9,6 +9,36 @@
   <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Каталог товаров - Интернет-магазин товаров ручной работы "Мишка"</title>
+
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      /* Mobile layout by default */
+      background-image: url("img/pixel-glass/catalog/Mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      html {
+        /* Tablet layout */
+        background-image: url("img/pixel-glass/catalog/Tablet.jpg");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1150px) {
+      html {
+        /* Desktop layout */
+        background-image: url("img/pixel-glass/catalog/Desktop.jpg");
+      }
+    }
+  </style>
+  <link href="../pixel-glass/styles.css" rel="stylesheet">
+  <script src="../pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 
 <body class="page__body">
@@ -68,8 +98,7 @@
           <a class="catalog__item-link" href="blank.html" aria-label="Перейти к подробному описанию товара">
 
             <picture>
-              <source media="(min-width: 1150px)" type="image/webp"
-                srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-hare-tablet@1x.webp, img/photo-hare-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x">
 
@@ -97,8 +126,7 @@
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
             <picture>
-              <source media="(min-width: 1150px)" type="image/webp"
-                srcset="img/photo-bowl-desktop@1x.webp, img/photo-bowl-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/photo-bowl-desktop@1x.webp, img/photo-bowl-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-bowl-tablet@1x.webp, img/photo-bowl-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x">
 
@@ -126,8 +154,7 @@
         <li class="catalog__item">
           <a href="blank.html" aria-label="Перейти к подробному описанию товара">
             <picture>
-              <source media="(min-width: 1150px)" type="image/webp"
-                srcset="img/photo-toys-desktop@1x.webp, img/photo-toys-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" type="image/webp" srcset="img/photo-toys-desktop@1x.webp, img/photo-toys-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-toys-tablet@1x.webp, img/photo-toys-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x">
 
