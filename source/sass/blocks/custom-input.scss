@@ -22,6 +22,8 @@
     box-shadow: $radio-normal-circle;
 
     @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
       margin-right: 25px;
     }
   }
@@ -38,6 +40,8 @@
     border: 2px solid $basic-dark-gray;
 
     @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
       margin-right: 30px;
     }
   }
@@ -56,6 +60,14 @@
     border-bottom: 2px solid $basic-black;
     border-left: 2px solid $basic-black;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      left: 11px;
+
+      width: 30px;
+      height: 15px;
+    }
   }
 }
 
@@ -63,10 +75,16 @@
 
 input[type="radio"] + .custom-input__label--radio::before {
   box-shadow: $radio-normal-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-normal-circle-50;
+  }
 }
 
 input[type="radio"]:focus-within + .custom-input__label--radio::before {
   box-shadow: $radio-colored-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-colored-circle-50;
+  }
 }
 
 input[type="radio"]:checked + .custom-input__label--radio::before {
@@ -75,19 +93,31 @@ input[type="radio"]:checked + .custom-input__label--radio::before {
 
 input[type="radio"]:disabled + .custom-input__label--radio::before {
   box-shadow: $radio-faded-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-faded-circle-50;
+  }
 }
 
 input[type="radio"]:checked:disabled + .custom-input__label--radio::before {
   background-color: $basic-dark-gray-opacity-30;
   box-shadow: $radio-faded-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-faded-circle-50;
+  }
 }
 
 .custom-input:hover input[type="radio"]:not(:disabled) + .custom-input__label--radio::before {
   box-shadow: $radio-colored-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-colored-circle-50;
+  }
 }
 
 .custom-input:active input[type="radio"]:not(:disabled) + .custom-input__label--radio::before {
   box-shadow: $radio-faded-circle;
+  @media (min-width: $tablet-width) {
+    box-shadow: $radio-faded-circle-50;
+  }
 }
 
 // Чекбоксы
