@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 99px;
+    padding-bottom: 20px;
   }
 }
 
@@ -80,17 +81,34 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 975px;
+      margin: 0;
+    }
   }
 
   &--phone {
     padding-top: 36px;
+
+    @media (min-width: $desktop-width) {
+      width: 975px;
+      margin: 0;
+    }
   }
 
 
   &--comment {
     padding-top: 35px;
+
     @media (min-width: $tablet-width) {
       padding-top: 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 975px;
+      margin: 0;
+      padding-bottom: 45px;
     }
   }
 }
@@ -123,7 +141,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(3, 1fr);
+      column-gap: 113px;
+
+      grid-template-columns: repeat(3, 150px);
     }
   }
 
@@ -207,7 +227,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 47px;
+    padding-left: 61px;
+
+    &--type {
+      padding-top: 20px;
+    }
   }
 
   &::after {
@@ -321,6 +345,10 @@
       top: calc(50% - 10px);
       right: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 10px;
+    }
   }
 
   &--mail {
@@ -329,6 +357,10 @@
     @media (min-width: $tablet-width) {
       top: calc(50% - 10px);
       right: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 6px;
     }
   }
 }
@@ -362,6 +394,10 @@
 
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 175px;
   }
 }
 

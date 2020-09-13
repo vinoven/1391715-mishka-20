@@ -2,10 +2,6 @@
   align-items: center;
 
   background-color: $bg-light-gray;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 45px;
-  }
 }
 
 .page-footer__wrapper {
