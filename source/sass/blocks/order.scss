@@ -81,20 +81,10 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 30px;
     }
-
-    @media (min-width: $desktop-width) {
-      width: 975px;
-      margin: 0;
-    }
   }
 
   &--phone {
     padding-top: 36px;
-
-    @media (min-width: $desktop-width) {
-      width: 975px;
-      margin: 0;
-    }
   }
 
 
@@ -106,12 +96,17 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 975px;
-      margin: 0;
       padding-bottom: 45px;
     }
   }
 }
+
+.order__fieldset--fullname .order__fieldset-inner-container,
+.order__fieldset--phone .order__fieldset-inner-container,
+.order__fieldset--comment .order__fieldset-inner-container {
+  margin-right: 175px;
+}
+
 
 .order__fieldset-wrapper:nth-child(odd) {
   @media (min-width: $tablet-width) {
