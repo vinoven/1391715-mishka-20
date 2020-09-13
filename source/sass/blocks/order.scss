@@ -104,7 +104,9 @@
 .order__fieldset--fullname .order__fieldset-inner-container,
 .order__fieldset--phone .order__fieldset-inner-container,
 .order__fieldset--comment .order__fieldset-inner-container {
-  margin-right: 175px;
+  @media (min-width: $desktop-width) {
+    margin-right: 175px;
+  }
 }
 
 
